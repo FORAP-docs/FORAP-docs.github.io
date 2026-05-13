@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">FORAP icon</title>
+  <desc id="desc">A reusable project package connected to adaptable learning, task, resource, and assessment modules.</desc>
+  <rect width="256" height="256" rx="48" fill="#161616"/>
+  <path d="M74 82c15-20 47-30 75-18 23 10 37 31 38 54" fill="none" stroke="#78a9ff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M178 108l9 23 15-20" fill="none" stroke="#78a9ff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M182 174c-15 20-47 30-75 18-23-10-37-31-38-54" fill="none" stroke="#42be65" stroke-width="12" stroke-linecap="round"/>
+  <path d="M78 148l-9-23-15 20" fill="none" stroke="#42be65" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M128 76l54 31v43l-54 31-54-31v-43z" fill="#ffffff"/>
+  <path d="M128 76l54 31-54 31-54-31z" fill="#d0e2ff"/>
+  <path d="M74 107l54 31v43l-54-31z" fill="#a6c8ff"/>
+  <path d="M182 107l-54 31v43l54-31z" fill="#78a9ff"/>
+  <path d="M74 107l54-31 54 31v43l-54 31-54-31z" fill="none" stroke="#161616" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M128 138v43M74 107l54 31 54-31" fill="none" stroke="#161616" stroke-width="6" stroke-linejoin="round"/>
+  <rect x="34" y="42" width="58" height="42" rx="8" fill="#0f62fe"/>
+  <path d="M48 56h30M48 68h21" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
+  <rect x="164" y="42" width="58" height="42" rx="8" fill="#24a148"/>
+  <path d="M178 56h30M178 68h21" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
+  <rect x="34" y="172" width="58" height="42" rx="8" fill="#ff832b"/>
+  <path d="M48 186h30M48 198h21" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
+  <rect x="164" y="172" width="58" height="42" rx="8" fill="#8a3ffc"/>
+  <path d="M178 186h30M178 198h21" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
+</svg>

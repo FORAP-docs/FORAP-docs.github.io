@@ -435,6 +435,43 @@ cds-side-nav-menu-item::part(link) {
 }
 
 /* --------------------------------------------------------------------------
+   FORAP icon lockups
+   -------------------------------------------------------------------------- */
+.site-mark {
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+.site-mark--header {
+  width: 1.375rem;
+  height: 1.375rem;
+  max-width: 1.375rem;
+  max-height: 1.375rem;
+  margin-right: var(--spacing-02);
+  vertical-align: middle;
+}
+
+.overview-title-lockup {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-04);
+  margin-bottom: var(--spacing-05);
+}
+
+.overview-title-lockup .page-title {
+  margin-bottom: 0;
+}
+
+.site-mark--hero {
+  width: clamp(2.25rem, 5vw, 3rem);
+  height: clamp(2.25rem, 5vw, 3rem);
+  max-width: 3rem;
+  max-height: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+}
+
+/* --------------------------------------------------------------------------
    Typography — Carbon productive, sized up
    -------------------------------------------------------------------------- */
 .page-title {
