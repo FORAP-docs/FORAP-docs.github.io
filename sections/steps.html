@@ -1,0 +1,403 @@
+<!-- ====================================================================
+     SECTION: Packaging Steps
+     Content matches FORAP.md Section 6 exactly
+     Tab panels: Steps 1-4, Steps 5-7, Steps 8-10
+     ==================================================================== -->
+<section id="steps" class="page-section page-section--alt">
+  <!-- Hero Banner -->
+  <div class="page-hero">
+    <div class="content-wrapper">
+      <h2 class="section-title">
+        <svg class="section-icon" viewBox="0 0 32 32">
+          <path
+            d="M12 29a1 1 0 01-.92-.62L6.33 17H2v-2h5a1 1 0 01.92.62L12 25.28l8.06-21.9A1 1 0 0121 2.76L25.09 13H30v2h-5.67a1 1 0 01-.95-.68L20 7.72l-7.06 20.66A1 1 0 0112 29z" />
+        </svg>
+        Packaging Steps
+      </h2>
+      <p class="section-description">
+        The following steps describe the process of using FORAP to design, build, and package
+        a computing PjBL project. Each step builds on previous ones toward a coherent, adoption-ready package.
+      </p>
+    </div>
+  </div>
+  <div class="content-wrapper">
+
+    <!-- Tab Panel: Steps 1–4 -->
+    <div id="steps-1-4" class="tab-panel active" role="tabpanel">
+      <div class="tab-panel-content">
+        <cds-accordion>
+          <cds-accordion-item title="Step 1. Identify the project idea" open>
+            <div class="step-content">
+              <p>Start by defining the project idea in a way that makes its instructional use and reuse clear.</p>
+              <ul>
+                <li>Identify the <strong>computing domain or discipline</strong> the project belongs to <cds-tag
+                    type="red" size="sm">ATT2</cds-tag></li>
+                <li>Decide the <strong>codebase context</strong> <cds-tag type="red" size="sm">ATT5</cds-tag>:
+                  <strong>Greenfield</strong> (students build a new system from scratch) or <strong>Brownfield</strong>
+                  (students modify, extend, test, refactor, or maintain an existing system)
+                </li>
+                <li>For a <strong>brownfield</strong> project, decide whether the existing system will come from: a
+                  prior instructional codebase, an internally prepared codebase, or an open-source project</li>
+                <li>If using an <strong>open-source</strong> project, look for a codebase that:
+                  is realistic enough to support authentic learning <cds-tag type="green" size="sm">PJP1</cds-tag>,
+                  is stable and buildable,
+                  has documentation and setup instructions that can be improved or supplemented <cds-tag type="blue"
+                    size="sm">GOAL3</cds-tag>,
+                  has a scope that can be reduced to fit the course <cds-tag type="blue" size="sm">GOAL4</cds-tag>,
+                  has a code structure that students can understand within the available time <cds-tag type="red"
+                    size="sm">ATT3</cds-tag> <cds-tag type="red" size="sm">ATT4</cds-tag></li>
+              </ul>
+              <p>This step establishes the project's basic identity and helps determine whether it can later support
+                reuse and adaptation <cds-tag type="blue" size="sm">GOAL2</cds-tag>.</p>
+            </div>
+          </cds-accordion-item>
+
+          <cds-accordion-item title="Step 2. Write the aligned learning objectives">
+            <div class="step-content">
+              <p>Write the project learning objectives first, because they will anchor the rest of the package <cds-tag
+                  type="red" size="sm">ATT1</cds-tag> <cds-tag type="blue" size="sm">GOAL1</cds-tag>.</p>
+              <ul>
+                <li>Write the key project design learning objectives <cds-tag type="blue" size="sm">GOAL1</cds-tag></li>
+                <li>You can also write them so they can be: compared with the objectives of other FORAP projects,
+                  courses, and curricular expectations</li>
+                <li>Use a structured format such as the <strong>competency specification of the CC2020 competency
+                    model</strong> when useful, since
+                  it provides a common way to express knowledge, skills, and dispositions <cds-tag type="red"
+                    size="sm">ATT1</cds-tag></li>
+                <li>Make sure the objectives describe what students should actually <strong>know and be able to
+                    do</strong> after the project</li>
+                <li>Keep the objectives specific enough to guide: task design, support preparation <cds-tag type="blue"
+                    size="sm">GOAL3</cds-tag>, assessment design <cds-tag type="blue" size="sm">GOAL5</cds-tag></li>
+              </ul>
+            </div>
+          </cds-accordion-item>
+
+          <cds-accordion-item title="Step 3. Specify the project attributes">
+            <div class="step-content">
+              <p>After the learning objectives are clear, define the intended project attributes (which might change
+                depending on how the project evolves).</p>
+              <ul>
+                <li>Record the <strong>domain or discipline</strong> <cds-tag type="red" size="sm">ATT2</cds-tag>
+                </li>
+                <li>Record the <strong>scope and duration</strong> <cds-tag type="red" size="sm">ATT3</cds-tag></li>
+                <li>Record the <strong>technical complexity</strong> <cds-tag type="red" size="sm">ATT4</cds-tag>
+                </li>
+                <li>Record the <strong>codebase context</strong> <cds-tag type="red" size="sm">ATT5</cds-tag></li>
+              </ul>
+              <p>These attributes help instructors: understand project fit, compare it with other projects, decide
+                whether adaptation is needed <cds-tag type="blue" size="sm">GOAL2</cds-tag>, judge whether the level of
+                challenge is appropriate <cds-tag type="blue" size="sm">GOAL4</cds-tag>.</p>
+            </div>
+          </cds-accordion-item>
+
+          <cds-accordion-item title="Step 4. Design the project task structure">
+            <div class="step-content">
+              <p>Now design the internal structure of the project itself. This should happen before detailed support
+                materials are built, because support depends on the tasks students will actually perform.</p>
+              <p>Common ways of structuring computing PjBL projects include:</p>
+              <ul>
+                <li><strong>Software life-cycle phases</strong> — requirements, design, implementation, testing,
+                  deployment or presentation</li>
+                <li><strong>Subprojects</strong> — a sequence of smaller connected tasks or mini-projects</li>
+                <li><strong>Sprint iterations</strong> — repeated cycles, often used in agile-oriented courses</li>
+                <li><strong>Software change tasks</strong> — feature additions, bug fixes, refactoring, maintenance work
+                </li>
+                <li><strong>Modules</strong> — project parts that each contribute to a larger final system</li>
+              </ul>
+              <p>When designing the task structure:</p>
+              <ul>
+                <li>Prefer tasks that <strong>build on one another</strong> rather than unrelated tasks</li>
+                <li>Let the project <strong>increase in difficulty progressively</strong> <cds-tag type="blue"
+                    size="sm">GOAL4</cds-tag></li>
+                <li>Make sure the sequence supports: authentic work <cds-tag type="green" size="sm">PJP1</cds-tag>,
+                  active learning <cds-tag type="green" size="sm">PJP2</cds-tag>, self-directed learning <cds-tag
+                    type="green" size="sm">PJP3</cds-tag>, collaboration <cds-tag type="green" size="sm">PJP4</cds-tag>,
+                  critical thinking <cds-tag type="green" size="sm">PJP5</cds-tag></li>
+              </ul>
+              <p>This step is also where you decide whether the project should be: a shorter module, a half-semester
+                project, or a full-semester project <cds-tag type="red" size="sm">ATT3</cds-tag>.</p>
+            </div>
+          </cds-accordion-item>
+        </cds-accordion>
+      </div>
+    </div>
+
+    <!-- Tab Panel: Steps 5–7 -->
+    <div id="steps-5-7" class="tab-panel" role="tabpanel">
+      <div class="tab-panel-content">
+        <cds-accordion>
+          <cds-accordion-item title="Step 5. Build the Student Support Package" open>
+            <div class="step-content">
+              <p>Once the task structure is defined, identify the support students will need to succeed. This step
+                strongly serves support for teaching and learning <cds-tag type="blue" size="sm">GOAL3</cds-tag>.</p>
+
+              <p class="substep-title"><svg class="substep-icon" viewBox="0 0 32 32">
+                  <path d="M30 10h-6a2 2 0 01-2-2V2h2v6h6z" />
+                  <path d="M22 30H10a2 2 0 01-2-2V4a2 2 0 012-2h12l8 8v18a2 2 0 01-2 2zM10 4v24h18V11h-7V4z" />
+                </svg> 5.1 Prepare installation guidelines <cds-tag type="purple" size="sm">STU1</cds-tag></p>
+              <p>Create explicit setup and access guidance for all required tools and environments.</p>
+              <ul>
+                <li>Identify what students must install, configure, access, or connect to</li>
+                <li>For <strong>greenfield</strong> projects, this may include: languages, frameworks, IDEs, databases,
+                  version control, deployment tools</li>
+                <li>For <strong>brownfield</strong> projects <cds-tag type="red" size="sm">ATT5</cds-tag>, also
+                  identify: how students will obtain the existing codebase, how they will build and run it, what
+                  dependencies it needs, what parts of the existing configuration must be preserved, what local setup
+                  problems are likely</li>
+                <li>For complex environments, consider: preconfigured setups, containers, prepared starter repositories,
+                  guided setup walkthroughs</li>
+              </ul>
+
+              <p class="substep-title"><svg class="substep-icon" viewBox="0 0 32 32">
+                  <path d="M15 10h2v10h-2z" />
+                  <path d="M10 15h12v2H10z" />
+                  <path d="M26 4H6a2 2 0 00-2 2v20a2 2 0 002 2h20a2 2 0 002-2V6a2 2 0 00-2-2zM6 26V6h20v20z" />
+                </svg> 5.2 Prepare laboratory exercises <cds-tag type="purple" size="sm">STU3</cds-tag> <cds-tag
+                  type="blue" size="sm">GOAL3</cds-tag></p>
+              <p>Design labs that help students gain the prerequisite knowledge needed for the project.</p>
+              <ul>
+                <li>Identify the <strong>prerequisite knowledge</strong> students need before or during project work
+                </li>
+                <li>Build labs for: setup and installation practice, learning GitHub or version control, using a
+                  framework or API, database access, testing tools, brownfield navigation of an existing codebase</li>
+                <li>Use labs to reduce technical barriers before students reach the larger project tasks <cds-tag
+                    type="blue" size="sm">GOAL4</cds-tag></li>
+              </ul>
+
+              <p class="substep-title"><svg class="substep-icon" viewBox="0 0 32 32">
+                  <path
+                    d="M26 2H6a2 2 0 00-2 2v24a2 2 0 002 2h20a2 2 0 002-2V4a2 2 0 00-2-2zM6 4h20v8H6zm0 10h9v14H6zm11 14V14h9v14z" />
+                </svg> 5.3 Prepare reference materials <cds-tag type="purple" size="sm">STU4</cds-tag> <cds-tag
+                  type="blue" size="sm">GOAL3</cds-tag></p>
+              <p>Assemble materials students can consult when they need background or procedural support.</p>
+              <ul>
+                <li>Include references for: key prerequisite knowledge, required tools and installation, APIs,
+                  libraries, or frameworks, protocol or format documentation, examples and sample artifacts</li>
+                <li>Include only the references that are likely to be useful for this project, not a general reading
+                  dump</li>
+              </ul>
+
+              <p class="substep-title"><svg class="substep-icon" viewBox="0 0 32 32">
+                  <path d="M16 2a14 14 0 1014 14A14 14 0 0016 2zm0 26a12 12 0 1112-12 12 12 0 01-12 12z" />
+                  <path d="M15 8h2v11h-2zM15 21h2v3h-2z" />
+                </svg> 5.4 Prepare support materials <cds-tag type="purple" size="sm">STU2</cds-tag> <cds-tag
+                  type="blue" size="sm">GOAL3</cds-tag></p>
+              <p>Create the project-specific materials students will use directly while doing the work.</p>
+              <ul>
+                <li>Task instructions</li>
+                <li>Milestone checklists</li>
+                <li>Starter code</li>
+                <li>Configuration files</li>
+                <li>Diagrams</li>
+                <li>Troubleshooting guidance</li>
+                <li>Design templates</li>
+                <li>Artifact templates</li>
+              </ul>
+              <p>This is also the place to prepare additional lecture materials or slide decks that support project work
+                and can be used by both students and instructors <cds-tag type="blue" size="sm">GOAL3</cds-tag>.</p>
+            </div>
+          </cds-accordion-item>
+
+          <cds-accordion-item title="Step 6. Build the Instructor Support Package">
+            <div class="step-content">
+              <p>Now prepare the materials instructors need in order to adopt, implement, adapt, and sustain the
+                project. This step serves both reuse and adaptability <cds-tag type="blue" size="sm">GOAL2</cds-tag>
+                and support for teaching and learning <cds-tag type="blue" size="sm">GOAL3</cds-tag>.</p>
+
+              <p class="substep-title"><svg class="substep-icon" viewBox="0 0 32 32">
+                  <path
+                    d="M26 2H6a2 2 0 00-2 2v24a2 2 0 002 2h20a2 2 0 002-2V4a2 2 0 00-2-2zM6 4h20v24H6zm4 4h12v2H10zm0 6h12v2H10zm0 6h8v2h-8z" />
+                </svg> 6.1 Prepare adoption guidelines <cds-tag type="warm-gray" size="sm">INS1</cds-tag></p>
+              <p>Explain how an instructor can adopt and adapt the project.</p>
+              <ul>
+                <li>What the project is for</li>
+                <li>What kinds of courses it fits</li>
+                <li>What learning objectives it supports <cds-tag type="red" size="sm">ATT1</cds-tag></li>
+                <li>How much time it requires <cds-tag type="red" size="sm">ATT3</cds-tag></li>
+                <li>What technical level it assumes <cds-tag type="red" size="sm">ATT4</cds-tag></li>
+                <li>What codebase context it uses <cds-tag type="red" size="sm">ATT5</cds-tag></li>
+                <li>What can be simplified, removed, extended, or replaced</li>
+              </ul>
+
+              <p class="substep-title"><svg class="substep-icon" viewBox="0 0 32 32">
+                  <path
+                    d="M28 4H4a2 2 0 00-2 2v14a2 2 0 002 2h8v4H8v2h16v-2h-4v-4h8a2 2 0 002-2V6a2 2 0 00-2-2zM18 26h-4v-4h4zM4 20V6h24v14z" />
+                </svg> 6.2 Prepare instructor notes <cds-tag type="warm-gray" size="sm">INS2</cds-tag></p>
+              <p>Document what an instructor needs to know during actual implementation.</p>
+              <ul>
+                <li>Teaching notes</li>
+                <li>Common student difficulties</li>
+                <li>Points where students usually need help</li>
+                <li>Suggestions for timing and sequencing</li>
+                <li>Instructional decisions and tradeoffs</li>
+                <li>Past deployment experiences</li>
+                <li>Adaptation advice for different contexts</li>
+              </ul>
+
+              <p class="substep-title"><svg class="substep-icon" viewBox="0 0 32 32">
+                  <path d="M4 20v2h4.586L2 28.586 3.414 30 10 23.414V28h2v-8H4z" />
+                  <path d="M26 2H6a2 2 0 00-2 2v12h2V4h20v16H16v2h10a2 2 0 002-2V4a2 2 0 00-2-2z" />
+                </svg> 6.3 Prepare implementation samples <cds-tag type="warm-gray" size="sm">INS3</cds-tag></p>
+              <p>Show example ways the project can be used in practice.</p>
+              <ul>
+                <li>Sample schedules</li>
+                <li>Example semester integration</li>
+                <li>Example sequencing of labs and tasks</li>
+                <li>Alternative implementation pathways</li>
+                <li>Examples of lighter and fuller versions of the project</li>
+              </ul>
+
+              <p class="substep-title"><svg class="substep-icon" viewBox="0 0 32 32">
+                  <path d="M10 18h8v2h-8zM10 14h12v2H10zM10 10h12v2H10z" />
+                  <path
+                    d="M25 4h-3V2h-2v2h-8V2h-2v2H7a2 2 0 00-2 2v21a2 2 0 002 2h18a2 2 0 002-2V6a2 2 0 00-2-2zm0 23H7V6h3v2h2V6h8v2h2V6h3z" />
+                </svg> 6.4 Prepare sample solutions <cds-tag type="warm-gray" size="sm">INS4</cds-tag></p>
+              <p>Create solutions or solution fragments that help instructors evaluate and demonstrate project tasks.
+              </p>
+              <ul>
+                <li>Example outputs</li>
+                <li>Completed task versions</li>
+                <li>Instructor-only answer materials</li>
+                <li>Comparison artifacts for grading</li>
+              </ul>
+
+              <p class="substep-title"><svg class="substep-icon" viewBox="0 0 32 32">
+                  <path d="M22 8v2c3.3 0 6 2.7 6 6s-2.7 6-6 6v2c4.4 0 8-3.6 8-8s-3.6-8-8-8z" />
+                  <path d="M16 30H4V2h18l6 6v6h-2V9h-5V4H6v24h10z" />
+                </svg> 6.5 Prepare the sustainability plan <cds-tag type="warm-gray" size="sm">INS5</cds-tag></p>
+              <p>Document what will need ongoing maintenance.</p>
+              <ul>
+                <li>Dependencies</li>
+                <li>Tools</li>
+                <li>Library versions</li>
+                <li>Setup instructions</li>
+                <li>External services</li>
+                <li>Links</li>
+                <li>Parts of the brownfield or open-source codebase most likely to change</li>
+              </ul>
+            </div>
+          </cds-accordion-item>
+
+          <cds-accordion-item title="Step 7. Build the Assessment Package">
+            <div class="step-content">
+              <p>Design assessment so it remains clearly connected to the learning objectives <cds-tag type="red"
+                  size="sm">ATT1</cds-tag> and supports both formative and summative uses <cds-tag type="blue"
+                  size="sm">GOAL5</cds-tag>.</p>
+
+              <p class="substep-title"><svg class="substep-icon" viewBox="0 0 32 32">
+                  <path d="M22 26H4V8h10V6H4a2 2 0 00-2 2v18a2 2 0 002 2h18a2 2 0 002-2V16h-2z" />
+                  <path
+                    d="M28.7 3.3a1 1 0 00-1.4 0L14 16.6V20h3.4L30.1 7.3a1 1 0 000-1.4zM16 18v-1l10.6-10.6 1 1L17 18z" />
+                </svg> 7.1 Create phased milestones <cds-tag type="cool-gray" size="sm">ASM1</cds-tag></p>
+              <p>Use milestones to structure student progress and support feedback during the project.</p>
+              <ul>
+                <li>Define meaningful intermediate deliverables</li>
+                <li>Make milestone boundaries match the task structure from Step 4</li>
+                <li>Use milestones to: check progress, identify where students are stuck, provide timely feedback,
+                  reduce last-minute project collapse</li>
+              </ul>
+
+              <p class="substep-title"><svg class="substep-icon" viewBox="0 0 32 32">
+                  <path d="M11 24h10v2H11zM13 28h6v2h-6z" />
+                  <path
+                    d="M16 2a10 10 0 00-6 18v3a1 1 0 001 1h10a1 1 0 001-1v-3A10 10 0 0016 2zm3.09 16.59l-.09.07V22h-6v-3.34l-.09-.07A8 8 0 1119.09 18.59z" />
+                </svg> 7.2 Create transfer-oriented design problems <cds-tag type="cool-gray" size="sm">ASM2</cds-tag>
+              </p>
+              <p>Prepare design problems that assess learning beyond the original project tasks.</p>
+              <ul>
+                <li>Use scenario-based prompts</li>
+                <li>Ask students to transfer knowledge to a new context</li>
+                <li>Use them to assess higher-order thinking, especially: analysis, evaluation, synthesis</li>
+                <li>These can be used in: exams, presentations, project reviews, oral discussions</li>
+              </ul>
+
+              <p class="substep-title"><svg class="substep-icon" viewBox="0 0 32 32">
+                  <path d="M14 20.18l-3.59-3.59L9 18l5 5 9-9-1.41-1.42L14 20.18z" />
+                  <path
+                    d="M25 5h-3V4a2 2 0 00-2-2h-8a2 2 0 00-2 2v1H7a2 2 0 00-2 2v21a2 2 0 002 2h18a2 2 0 002-2V7a2 2 0 00-2-2zM12 4h8v4h-8zM25 28H7V7h3v3h12V7h3z" />
+                </svg> 7.3 Create the detailed rubric <cds-tag type="cool-gray" size="sm">ASM3</cds-tag></p>
+              <p>Prepare a rubric aligned with the learning objectives <cds-tag type="red" size="sm">ATT1</cds-tag>
+                <cds-tag type="cool-gray" size="sm">ASM3</cds-tag>.
+              </p>
+              <ul>
+                <li>Define clear evaluation criteria</li>
+                <li>Include criteria for relevant artifacts such as: code, design documents, reports, presentations,
+                  demonstrations</li>
+                <li>Make the rubric usable for both feedback and grading <cds-tag type="blue" size="sm">GOAL5</cds-tag>
+                </li>
+              </ul>
+            </div>
+          </cds-accordion-item>
+        </cds-accordion>
+      </div>
+    </div>
+
+    <!-- Tab Panel: Steps 8–10 -->
+    <div id="steps-8-10" class="tab-panel" role="tabpanel">
+      <div class="tab-panel-content">
+        <cds-accordion>
+          <cds-accordion-item title="Step 8. Check alignment across the whole package" open>
+            <div class="step-content">
+              <p>Before final packaging, review whether all parts are working together coherently.</p>
+              <ul>
+                <li>Check whether the learning objectives <cds-tag type="blue" size="sm">GOAL1</cds-tag><cds-tag
+                    type="red" size="sm">ATT1</cds-tag> match: the
+                  task structure, the project attributes <cds-tag type="red" size="sm">ATT2</cds-tag> <cds-tag
+                    type="red" size="sm">ATT3</cds-tag> <cds-tag type="red" size="sm">ATT4</cds-tag> <cds-tag type="red"
+                    size="sm">ATT5</cds-tag>, the student support <cds-tag type="purple" size="sm">STU1</cds-tag>
+                  <cds-tag type="purple" size="sm">STU2</cds-tag> <cds-tag type="purple" size="sm">STU3</cds-tag>
+                  <cds-tag type="purple" size="sm">STU4</cds-tag>, the instructor support
+                  <cds-tag type="warm-gray" size="sm">INS1</cds-tag> <cds-tag type="warm-gray" size="sm">INS2</cds-tag>
+                  <cds-tag type="warm-gray" size="sm">INS3</cds-tag> <cds-tag type="warm-gray" size="sm">INS4</cds-tag>
+                  <cds-tag type="warm-gray" size="sm">INS5</cds-tag>, the assessment package <cds-tag type="cool-gray"
+                    size="sm">ASM1</cds-tag> <cds-tag type="cool-gray" size="sm">ASM2</cds-tag> <cds-tag
+                    type="cool-gray" size="sm">ASM3</cds-tag>
+                </li>
+                <li>Check whether the level of challenge remains appropriate <cds-tag type="blue"
+                    size="sm">GOAL4</cds-tag></li>
+                <li>Check whether sufficient support has been added for both students and instructors <cds-tag
+                    type="blue" size="sm">GOAL3</cds-tag></li>
+              </ul>
+              <p>This is the point where the project becomes a coordinated FORAP package rather than just a collection
+                of materials.</p>
+            </div>
+          </cds-accordion-item>
+
+          <cds-accordion-item title="Step 9. Package the project for reuse and adaptation">
+            <div class="step-content">
+              <p>Organize all materials into a coherent, adoption-ready format.</p>
+              <ul>
+                <li>Make the structure easy to navigate</li>
+                <li>Separate student-facing and instructor-facing materials</li>
+                <li>Make adaptation points visible</li>
+                <li>Make comparison with other FORAP projects easier through the competency specification <cds-tag
+                    type="red" size="sm">ATT1</cds-tag> and project attributes <cds-tag type="red"
+                    size="sm">ATT2</cds-tag> <cds-tag type="red" size="sm">ATT3</cds-tag> <cds-tag type="red"
+                    size="sm">ATT4</cds-tag> <cds-tag type="red" size="sm">ATT5</cds-tag></li>
+                <li>Preserve reusability and adaptability <cds-tag type="blue" size="sm">GOAL2</cds-tag></li>
+              </ul>
+            </div>
+          </cds-accordion-item>
+
+          <cds-accordion-item title="Step 10. Implement, review, and refine">
+            <div class="step-content">
+              <p>After classroom use, improve the project package based on evidence from use.</p>
+              <ul>
+                <li>Revise supports <cds-tag type="blue" size="sm">GOAL3</cds-tag></li>
+                <li>Revise challenge level <cds-tag type="blue" size="sm">GOAL4</cds-tag></li>
+                <li>Revise assessment <cds-tag type="blue" size="sm">GOAL5</cds-tag></li>
+                <li>Revise sustainability planning <cds-tag type="warm-gray" size="sm">INS5</cds-tag></li>
+                <li>Update brownfield or open-source setup materials <cds-tag type="red" size="sm">ATT5</cds-tag>
+                </li>
+                <li>Refine objectives and attributes when needed <cds-tag type="red" size="sm">ATT1</cds-tag>
+                  <cds-tag type="red" size="sm">ATT2</cds-tag> <cds-tag type="red" size="sm">ATT3</cds-tag>
+                  <cds-tag type="red" size="sm">ATT4</cds-tag> <cds-tag type="red" size="sm">ATT5</cds-tag>
+                </li>
+              </ul>
+            </div>
+          </cds-accordion-item>
+        </cds-accordion>
+      </div>
+    </div>
+  </div>
+</section>

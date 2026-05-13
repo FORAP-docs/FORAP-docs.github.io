@@ -1,0 +1,331 @@
+<!-- ====================================================================
+     SECTION: Illustrative Example — OAuth Project Package
+     Draft page kept separate until approved for navigation/integration
+     ==================================================================== -->
+<section id="example" class="page-section">
+  <div class="page-hero">
+    <div class="content-wrapper">
+      <h2 class="section-title">
+        <svg class="section-icon" viewBox="0 0 32 32">
+          <path d="M16 2a14 14 0 1014 14A14 14 0 0016 2zm0 26a12 12 0 1112-12 12 12 0 01-12 12z" />
+          <path
+            d="M16 8a3 3 0 110 6 3 3 0 010-6zm-7 14c.2-4.1 2.9-6 7-6s6.8 1.9 7 6h-2c-.2-2.8-1.8-4-5-4s-4.8 1.2-5 4z" />
+        </svg>
+        Illustrative Example: OAuth Project Package
+      </h2>
+      <p class="section-description">
+        This example shows how FORAP can package a computing project for reuse and adaptation. The OAuth
+        project is organized as a phased team project in which students build a basic authentication subsystem,
+        integrate external OAuth providers, and then create a custom OAuth server or identity provider.
+      </p>
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+    <h3 class="subsection-title">
+      <svg class="subsection-icon" viewBox="0 0 32 32">
+        <path d="M26 30H6a2 2 0 01-2-2V6a2 2 0 012-2h20a2 2 0 012 2v22a2 2 0 01-2 2zM6 6v22h20V6z" />
+        <path d="M10 11h12v2H10zM10 16h12v2H10zM10 21h8v2h-8z" />
+      </svg>
+      Project Snapshot
+    </h3>
+    <p class="body-text">
+      This example presents the five project attributes.
+    </p>
+
+    <div class="snapshot-grid">
+      <cds-tile class="snapshot-grid__competency">
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+            <path d="M16 3L3 9l13 6 10.7-4.9V19h2V9zm-7 10.2V18c0 2.8 5.1 5 7 5s7-2.2 7-5v-4.8l-7 3.2z" />
+          </svg>
+          <span class="tile-label">Competency Specification</span>
+        </div>
+        <div class="tile-body">
+          <table class="snapshot-grid__competency-table">
+            <tr>
+              <th colspan="2">OAuth ProjectCompetency</th>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <strong>Competency Statement</strong><br>
+                Implement an OAuth 2.0/OIDC workflow by building a client, integrating with an external provider, and
+                creating a custom provider.
+              </td>
+            </tr>
+            <tr>
+              <th>CC2020 Knowledge</th>
+              <th>Skill Level</th>
+            </tr>
+            <td><span class="competency-code" title="K(C-2.4)">Data and Information Management</span></td>
+            <td><span class="competency-code" title="S(B-III)">Applying</span></td>
+            </tr>
+            <tr>
+              <td><span class="competency-code" title="K(C-3.9)">Security Technology and Implementation</span></td>
+              <td><span class="competency-code" title="S(B-IV)">Analyzing</span></td>
+            </tr>
+            <tr>
+              <td><span class="competency-code" title="K(P-5)">Collaboration and Teamwork</span></td>
+              <td><span class="competency-code" title="S(B-III)">Applying</span></td>
+            </tr>
+            <tr>
+              <td><span class="competency-code" title="K(P-1)">Oral Communication and Presentation</span></td>
+              <td><span class="competency-code" title="S(B-III)">Applying</span></td>
+            </tr>
+            <tr>
+              <td><span class="competency-code" title="K(P-2)">Written Communication</span></td>
+              <td><span class="competency-code" title="S(B-III)">Applying</span></td>
+            </tr>
+            <tr>
+              <td><span class="competency-code" title="K(P-6)">Research and self-starter/learner</span></td>
+              <td><span class="competency-code" title="S(B-IV)">Analyzing</span></td>
+            </tr>
+            <tr>
+              <th colspan="2">Dispositions</th>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <span class="competency-code" title="D-8">Collaborative</span>,
+                <span class="competency-code" title="D-10">Meticulous</span>,
+                <span class="competency-code" title="D-2">Self-Directed</span>,
+                <span class="competency-code" title="D-5">Professional</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <cds-tag type="purple" size="sm" class="bottom-right-tag">CC2020</cds-tag>
+      </cds-tile>
+
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+            <path d="M16 2l12 7v14l-12 7L4 23V9zm0 2.3L6 10v12l10 5.8L26 22V10z" />
+          </svg>
+          <span class="tile-label">Domain / Discipline</span>
+        </div>
+        <div class="tile-body">Mobile Computing, Behavioral Biometrics, and Machine Learning</div>
+        <cds-tag type="blue" size="sm" class="bottom-right-tag">Interdisciplinary</cds-tag>
+      </cds-tile>
+
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+            <path d="M4 6h24v16H4zM6 8v12h20V8z" />
+            <path d="M10 24h12v2H10z" />
+          </svg>
+          <span class="tile-label">Codebase Context</span>
+        </div>
+        <div class="tile-body">Greenfield mobile application project with new data collection and model integration
+        </div>
+        <cds-tag type="teal" size="sm" class="bottom-right-tag">Greenfield</cds-tag>
+      </cds-tile>
+
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+            <path d="M16 4a12 12 0 110 24 12 12 0 010-24zm0 2a10 10 0 100 20 10 10 0 000-20z" />
+            <path d="M15 9h2v8h-2zM16 17l5 3-1 1.7-6-3.7z" />
+          </svg>
+          <span class="tile-label">Technical Complexity</span>
+        </div>
+        <div class="tile-body">High. Requires sensor-driven mobile design, feature engineering, and ML-based evaluation.
+        </div>
+        <cds-tag type="warm-gray" size="sm" class="bottom-right-tag">High</cds-tag>
+      </cds-tile>
+
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+            <path d="M8 4h2v4H8zM22 4h2v4h-2z" />
+            <path d="M26 8H6a2 2 0 00-2 2v16a2 2 0 002 2h20a2 2 0 002-2V10a2 2 0 00-2-2zM6 26V14h20v12z" />
+          </svg>
+          <span class="tile-label">Scope / Duration</span>
+        </div>
+        <div class="tile-body">Medium-to-large project, typically 4-6 weeks with staged milestones.</div>
+        <cds-tag type="cool-gray" size="sm" class="bottom-right-tag">Multi-week</cds-tag>
+      </cds-tile>
+    </div>
+
+    <h3 class="subsection-title" style="margin-top: var(--spacing-10);">
+      <svg class="subsection-icon" viewBox="0 0 32 32">
+        <path d="M4 6h24v4H4zM4 14h24v4H4zM4 22h24v4H4z" />
+      </svg>
+      Three-Task Structure
+    </h3>
+    <p class="body-text">
+      In this package, the three project tasks also function as phased milestones for teamwork and formative
+      assessment. Each phase introduces a more advanced level of OAuth implementation while preserving a clear
+      progression from foundation to integration to full provider design.
+    </p>
+
+    <div class="tile-grid tile-grid--3">
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32">
+            <path d="M10 6h12v2H10zM10 12h12v2H10zM10 18h8v2h-8z" />
+            <path d="M26 2H6a2 2 0 00-2 2v24a2 2 0 002 2h20a2 2 0 002-2V4a2 2 0 00-2-2zM6 28V4h20v24z" />
+          </svg>
+          <span class="tile-label">Task 1</span>
+        </div>
+        <div class="tile-body">
+          Build a basic web authentication subsystem as the project foundation, including the initial client-side
+          and server-side flow needed for secure sign-in.
+        </div>
+        <cds-tag type="purple" size="sm" class="bottom-right-tag">Milestone 1</cds-tag>
+      </cds-tile>
+
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32">
+            <path d="M12 8a4 4 0 104 4 4 4 0 00-4-4zm0 6a2 2 0 112-2 2 2 0 01-2 2z" />
+            <path d="M24 8a4 4 0 104 4 4 4 0 00-4-4zm0 6a2 2 0 112-2 2 2 0 01-2 2z" />
+            <path d="M14 11h8v2h-8zM10 20h16v2H10z" />
+          </svg>
+          <span class="tile-label">Task 2</span>
+        </div>
+        <div class="tile-body">
+          Integrate third-party OAuth providers so students work with real external identity services and handle
+          provider configuration, redirects, and token exchange.
+        </div>
+        <cds-tag type="purple" size="sm" class="bottom-right-tag">Milestone 2</cds-tag>
+      </cds-tile>
+
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32">
+            <path
+              d="M16 3L4 9v6c0 7.2 5.1 13.9 12 15 6.9-1.1 12-7.8 12-15V9zm0 2.2L26 10v5c0 5.9-4 11.5-10 12.8C10 26.5 6 20.9 6 15v-5z" />
+            <path d="M16 11a3 3 0 013 3v2h1v6h-8v-6h1v-2a3 3 0 013-3zm-1 5h2v-2a1 1 0 10-2 0z" />
+          </svg>
+          <span class="tile-label">Task 3</span>
+        </div>
+        <div class="tile-body">
+          Create a custom OAuth server or identity provider, requiring students to move beyond consumption of an
+          existing service and design core provider behavior themselves.
+        </div>
+        <cds-tag type="purple" size="sm" class="bottom-right-tag">Milestone 3</cds-tag>
+      </cds-tile>
+    </div>
+
+    <h3 class="subsection-title" style="margin-top: var(--spacing-10);">
+      <svg class="subsection-icon" viewBox="0 0 32 32">
+        <path d="M26 30H6a2 2 0 01-2-2V4a2 2 0 012-2h14l8 8v18a2 2 0 01-2 2zM6 4v24h20V11h-7V4zm13 1.41L23.59 10H19z" />
+      </svg>
+      Package Components In This Example
+    </h3>
+    <p class="body-text">
+      FORAP packages the OAuth project through coordinated student, instructor, and assessment support. Across all
+      three components, materials are available in both text and video formats to improve accessibility and reuse.
+    </p>
+
+    <div class="tile-grid tile-grid--3">
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32">
+            <path
+              d="M26 30h-2v-5a5 5 0 00-5-5h-6a5 5 0 00-5 5v5H6v-5a7 7 0 017-7h6a7 7 0 017 7zM16 4a5 5 0 11-5 5 5 5 0 015-5m0-2a7 7 0 107 7 7 7 0 00-7-7z" />
+          </svg>
+          <span class="tile-label">Student Support Package</span>
+        </div>
+        <div class="tile-body">
+          Includes background materials on single sign-on, federated identity, and OAuth; startup lab exercises such
+          as environment setup and connecting to an existing OAuth 2.0 provider; and task-specific guidance used
+          directly to complete the three project tasks.
+        </div>
+        <cds-tag type="purple" size="sm" class="bottom-right-tag">Student-facing</cds-tag>
+      </cds-tile>
+
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32">
+            <path
+              d="M30 30h-2v-5a5 5 0 00-5-5v-2a7 7 0 017 7zm-8-14a5 5 0 10-5-5 5 5 0 005 5zm0-8a3 3 0 11-3 3 3 3 0 013-3zM16 30H4v-5a7 7 0 017-7h6a7 7 0 017 7v5h-2v-5a5 5 0 00-5-5h-6a5 5 0 00-5 5v5h10z" />
+          </svg>
+          <span class="tile-label">Instructor Support Package</span>
+        </div>
+        <div class="tile-body">
+          Includes notes on structuring and deploying the project, sample deployment schedules, guidance on team size,
+          timing, grading, project variations, and sample solutions aligned with the three tasks.
+        </div>
+        <cds-tag type="warm-gray" size="sm" class="bottom-right-tag">Instructor-facing</cds-tag>
+      </cds-tile>
+
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32">
+            <path d="M14 20.18l-3.59-3.59L9 18l5 5 9-9-1.41-1.42L14 20.18z" />
+            <path
+              d="M25 5h-3V4a2 2 0 00-2-2h-8a2 2 0 00-2 2v1H7a2 2 0 00-2 2v21a2 2 0 002 2h18a2 2 0 002-2V7a2 2 0 00-2-2zM12 4h8v4h-8zM25 28H7V7h3v3h12V7h3z" />
+          </svg>
+          <span class="tile-label">Assessment Package</span>
+        </div>
+        <div class="tile-body">
+          Includes the three task phases as assessment checkpoints together with a grading rubric aligned to the
+          expected student work across the project.
+        </div>
+        <cds-tag type="cool-gray" size="sm" class="bottom-right-tag">Assessment-facing</cds-tag>
+      </cds-tile>
+    </div>
+
+    <h3 class="subsection-title" style="margin-top: var(--spacing-10);">
+      <svg class="subsection-icon" viewBox="0 0 32 32">
+        <path d="M6 4h20v4H6zM6 14h20v4H6zM6 24h20v4H6z" />
+      </svg>
+      Why This Example Works For FORAP
+    </h3>
+    <div class="tile-grid tile-grid--2">
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32">
+            <path d="M4 16h10v2H4zM18 16h10v2H18zM15 8h2v16h-2z" />
+          </svg>
+          <span class="tile-label">Reusable Structure</span>
+        </div>
+        <div class="tile-body">
+          The project decomposes naturally into three phases, making it easy to reuse as-is or adapt to a shorter or
+          longer course deployment without losing instructional coherence.
+        </div>
+      </cds-tile>
+
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32">
+            <path d="M16 4l10 6v12l-10 6-10-6V10zm0 2.3L8 11v10l8 4.7 8-4.7V11z" />
+          </svg>
+          <span class="tile-label">Layered Difficulty</span>
+        </div>
+        <div class="tile-body">
+          Students progress from foundational authentication concepts to integration work and then to provider design,
+          which supports scaffolded learning in a technically demanding area.
+        </div>
+      </cds-tile>
+
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32">
+            <path d="M8 6h16v2H8zM8 12h16v2H8zM8 18h10v2H8zM8 24h8v2H8z" />
+          </svg>
+          <span class="tile-label">Package Alignment</span>
+        </div>
+        <div class="tile-body">
+          Student support, instructor support, and assessment checkpoints all map directly onto the same three-task
+          project flow, which keeps the package internally consistent.
+        </div>
+      </cds-tile>
+
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32">
+            <path d="M10 8h12v2H10zM10 14h12v2H10zM10 20h8v2h-8z" />
+            <path d="M6 4h20v24H6zM8 6v20h16V6z" />
+          </svg>
+          <span class="tile-label">Assessment Visibility</span>
+        </div>
+        <div class="tile-body">
+          The phased structure gives instructors clear formative checkpoints for feedback, grading, and team progress
+          monitoring before the final project completion stage.
+        </div>
+      </cds-tile>
+    </div>
+  </div>
+</section>
