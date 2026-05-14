@@ -4,7 +4,7 @@
    ========================================================================== */
 
 const SECTIONS = [
-  'sections/intro.html',
+  'sections/overview.html',
   'sections/purpose.html',
   'sections/architecture.html',
   'sections/principles.html',

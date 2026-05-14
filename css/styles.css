@@ -467,8 +467,6 @@ cds-side-nav-menu-item::part(link) {
   height: clamp(2.25rem, 5vw, 3rem);
   max-width: 3rem;
   max-height: 3rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 0.5rem;
 }
 
 /* --------------------------------------------------------------------------
@@ -904,10 +902,51 @@ cds-tag[type="gray"] {
   margin-bottom: var(--spacing-02);
 }
 
+.purpose-article-card {
+  display: block;
+  --cds-tile-padding: 0;
+  overflow: hidden;
+  background: var(--cds-layer-01);
+}
+
+.tile-grid cds-tile.purpose-article-card {
+  gap: 0;
+  padding: 0 !important;
+  border-top: 0;
+}
+
+.tile-grid cds-tile.purpose-article-card:hover {
+  border-top-color: transparent;
+}
+
+.purpose-article-card__image {
+  aspect-ratio: 16 / 9;
+  background: var(--cds-layer-02);
+  overflow: hidden;
+}
+
+.purpose-article-card__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.purpose-article-card__body {
+  min-height: clamp(18rem, 34vw, 24rem);
+  padding: var(--spacing-06);
+  background: var(--cds-layer-01);
+  border-top: 1px solid var(--cds-border-subtle);
+}
+
+.purpose-article-card .tile-heading {
+  margin-bottom: var(--spacing-05);
+}
+
 /* --------------------------------------------------------------------------
-   Intro "What FORAP is / is not" tiles — side by side, icons per line
+   overview "What FORAP is / is not" tiles — side by side, icons per line
    -------------------------------------------------------------------------- */
-.intro-tiles {
+.overview-tiles {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--spacing-06);
@@ -915,12 +954,12 @@ cds-tag[type="gray"] {
 }
 
 @media (min-width: 672px) {
-  .intro-tiles {
+  .overview-tiles {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-.intro-tiles cds-tile {
+.overview-tiles cds-tile {
   display: block;
   background-color: var(--cds-layer-01);
   border: none;
@@ -935,7 +974,7 @@ cds-tag[type="gray"] {
   border-top: 4px solid var(--cds-support-error) !important;
 }
 
-.intro-tiles .tile-heading {
+.overview-tiles .tile-heading {
   font-size: var(--type-heading-02);
   font-weight: 600;
   margin-bottom: var(--spacing-05);
@@ -945,7 +984,7 @@ cds-tag[type="gray"] {
   gap: var(--spacing-03);
 }
 
-.intro-tiles .tile-heading .heading-icon {
+.overview-tiles .tile-heading .heading-icon {
   width: 20px;
   height: 20px;
   flex-shrink: 0;
@@ -959,13 +998,13 @@ cds-tag[type="gray"] {
   fill: var(--cds-support-error);
 }
 
-.intro-tiles ul {
+.overview-tiles ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.intro-tiles ul li {
+.overview-tiles ul li {
   font-size: var(--type-body-01);
   line-height: 1.7;
   color: var(--cds-text-secondary);
@@ -976,11 +1015,11 @@ cds-tag[type="gray"] {
   gap: var(--spacing-04);
 }
 
-.intro-tiles ul li:last-child {
+.overview-tiles ul li:last-child {
   border-bottom: none;
 }
 
-.intro-tiles ul li .line-icon {
+.overview-tiles ul li .line-icon {
   width: 20px;
   height: 20px;
   flex-shrink: 0;
@@ -1460,7 +1499,7 @@ cds-accordion-item::part(title) {
 }
 
 @media (max-width: 671px) {
-  .site-footer__columns .site-footer__list + .site-footer__list {
+  .site-footer__columns .site-footer__list+.site-footer__list {
     padding-top: var(--spacing-02);
   }
 }
@@ -1845,7 +1884,7 @@ cds-accordion-item::part(title) {
   grid-template-columns: 1fr;
 }
 
-.arch-node-grid > .arch-node {
+.arch-node-grid>.arch-node {
   height: 100%;
 }
 
