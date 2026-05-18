@@ -1,5 +1,5 @@
 <!-- ====================================================================
-     SECTION: Illustrative Example — OAuth Project Package
+     SECTION: Illustrative Example — Touchalytics Project Package
      Draft page kept separate until approved for navigation/integration
      ==================================================================== -->
 <section id="example" class="page-section">
@@ -11,12 +11,13 @@
           <path
             d="M16 8a3 3 0 110 6 3 3 0 010-6zm-7 14c.2-4.1 2.9-6 7-6s6.8 1.9 7 6h-2c-.2-2.8-1.8-4-5-4s-4.8 1.2-5 4z" />
         </svg>
-        Illustrative Example: OAuth Project Package
+        Illustrative Example: Touchalytics Project
       </h2>
       <p class="section-description">
-        This example shows how FORAP can package a computing project for reuse and adaptation. The OAuth
-        project is organized as a phased team project in which students build a basic authentication subsystem,
-        integrate external OAuth providers, and then create a custom OAuth server or identity provider.
+        This project asks students to build an Android authentication application that uses swipe behavior as a
+        biometric signal, stores interaction data in cloud storage, and processes it with a Python-based machine
+        learning
+        backend.
       </p>
     </div>
   </div>
@@ -40,51 +41,50 @@
         </div>
         <div class="tile-body">
           <table class="snapshot-grid__competency-table">
+            <colgroup>
+              <col class="snapshot-grid__knowledge-col">
+              <col class="snapshot-grid__skill-col">
+            </colgroup>
             <tr>
               <th colspan="2">Competency Statement</th>
             </tr>
             <tr>
               <td colspan="2">
-                Implement an OAuth 2.0/OIDC workflow by building a client, integrating with a provider, and
-                creating a custom provider.
+                Apply machine learning to behavioral data classification for mobile authentication.
               </td>
             </tr>
             <tr>
               <th>CC2020 Knowledge</th>
-              <th>Skill Level</th>
-            </tr>
-            <td><span class="competency-code" title="K(C-2.4)">Data and Information Management</span></td>
-            <td><span class="competency-code" title="S(B-III)">Applying</span></td>
+              <th>Skill-Level</th>
             </tr>
             <tr>
-              <td><span class="competency-code" title="K(C-3.9)">Security Technology and Implementation</span></td>
-              <td><span class="competency-code" title="S(B-IV)">Analyzing</span></td>
+              <td><span class="competency-code">K(C3.2) Intelligent Systems (AI)</span></td>
+              <td><span class="competency-code">Creating</span></td>
             </tr>
             <tr>
-              <td><span class="competency-code" title="K(P-5)">Collaboration and Teamwork</span></td>
-              <td><span class="competency-code" title="S(B-III)">Applying</span></td>
+              <td><span class="competency-code">K(C4.5) Platform-Based Development</span></td>
+              <td><span class="competency-code">Creating</span></td>
             </tr>
             <tr>
-              <td><span class="competency-code" title="K(P-1)">Oral Communication and Presentation</span></td>
-              <td><span class="competency-code" title="S(B-III)">Applying</span></td>
+              <td><span class="competency-code">K(C2.4) Data and Information Management</span></td>
+              <td><span class="competency-code">Applying</span></td>
             </tr>
             <tr>
-              <td><span class="competency-code" title="K(P-2)">Written Communication</span></td>
-              <td><span class="competency-code" title="S(B-III)">Applying</span></td>
+              <td><span class="competency-code">K(C3.9) Security Tech. and Implementation</span></td>
+              <td><span class="competency-code">Analyzing</span></td>
             </tr>
             <tr>
-              <td><span class="competency-code" title="K(P-6)">Research and self-starter/learner</span></td>
-              <td><span class="competency-code" title="S(B-IV)">Analyzing</span></td>
+              <td><span class="competency-code">K(P5) Collaboration and Teamwork</span></td>
+              <td><span class="competency-code">Applying</span></td>
             </tr>
             <tr>
               <th colspan="2">Dispositions</th>
             </tr>
             <tr>
               <td colspan="2">
-                <span class="competency-code" title="D-8">Collaborative</span>,
-                <span class="competency-code" title="D-10">Meticulous</span>,
-                <span class="competency-code" title="D-2">Self-Directed</span>,
-                <span class="competency-code" title="D-5">Professional</span>
+                <span class="competency-code">D-8 Collaborative</span>,
+                <span class="competency-code">D-2 Self-Directed</span>,
+                <span class="competency-code">D-11 Inventive</span>
               </td>
             </tr>
           </table>
@@ -111,8 +111,8 @@
           </svg>
           <span class="tile-label">Codebase Context</span>
         </div>
-        <div class="tile-body">Greenfield mobile application project with new data collection and model integration
-        </div>
+        <div class="tile-body">Greenfield mobile application project with Firebase data storage and a Python-based
+          machine learning backend.</div>
         <cds-tag type="teal" size="sm" class="bottom-right-tag">Greenfield</cds-tag>
       </cds-tile>
 
@@ -124,8 +124,8 @@
           </svg>
           <span class="tile-label">Technical Complexity</span>
         </div>
-        <div class="tile-body">High. Requires sensor-driven mobile design, feature engineering, and ML-based evaluation.
-        </div>
+        <div class="tile-body">High. Requires mobile development, behavioral data capture, cloud storage, and
+          machine-learning-based authentication.</div>
         <cds-tag type="warm-gray" size="sm" class="bottom-right-tag">High</cds-tag>
       </cds-tile>
 
@@ -137,113 +137,229 @@
           </svg>
           <span class="tile-label">Scope / Duration</span>
         </div>
-        <div class="tile-body">Medium-to-large project, typically 4-6 weeks with staged milestones.</div>
+        <div class="tile-body">Medium-to-large project, typically 6-8 weeks with staged milestones.</div>
         <cds-tag type="cool-gray" size="sm" class="bottom-right-tag">Multi-week</cds-tag>
       </cds-tile>
     </div>
 
     <h3 class="subsection-title" style="margin-top: var(--spacing-10);">
       <svg class="subsection-icon" viewBox="0 0 32 32">
-        <path d="M4 6h24v4H4zM4 14h24v4H4zM4 22h24v4H4z" />
+        <path
+          d="M26 30h-2v-5a5 5 0 00-5-5h-6a5 5 0 00-5 5v5H6v-5a7 7 0 017-7h6a7 7 0 017 7zM16 4a5 5 0 11-5 5 5 5 0 015-5m0-2a7 7 0 107 7 7 7 0 00-7-7z" />
       </svg>
-      Three-Task Structure
+      Student Support Package
     </h3>
     <p class="body-text">
-      In this package, the three project tasks also function as phased milestones for teamwork and formative
-      assessment. Each phase introduces a more advanced level of OAuth implementation while preserving a clear
-      progression from foundation to integration to full provider design.
+      The Touchalytics student materials help teams set up the required mobile, cloud, and backend environments,
+      build prerequisite knowledge, and complete the project phases for swipe-based mobile authentication.
     </p>
 
-    <div class="tile-grid tile-grid--3">
+    <div class="tile-grid tile-grid--2">
       <cds-tile>
         <div class="tile-heading">
           <svg class="tile-icon" viewBox="0 0 32 32">
-            <path d="M10 6h12v2H10zM10 12h12v2H10zM10 18h8v2h-8z" />
-            <path d="M26 2H6a2 2 0 00-2 2v24a2 2 0 002 2h20a2 2 0 002-2V4a2 2 0 00-2-2zM6 28V4h20v24z" />
+            <path d="M30 10h-6a2 2 0 01-2-2V2h2v6h6z" />
+            <path d="M22 30H10a2 2 0 01-2-2V4a2 2 0 012-2h12l8 8v18a2 2 0 01-2 2zM10 4v24h18V11h-7V4z" />
+            <path d="M12 18h14v2H12zM12 24h14v2H12z" />
           </svg>
-          <span class="tile-label">Task 1</span>
+          <span class="tile-label">Installation Guidelines</span>
         </div>
         <div class="tile-body">
-          Build a basic web authentication subsystem as the project foundation, including the initial client-side
-          and server-side flow needed for secure sign-in.
+          Written and video guides help students set up Python 3 with an IDE, pip, and machine learning libraries;
+          Android Studio for mobile development; and Firebase with Realtime Database configuration.
         </div>
-        <cds-tag type="purple" size="sm" class="bottom-right-tag">Milestone 1</cds-tag>
+        <cds-tag type="purple" size="sm" class="bottom-right-tag">STU1</cds-tag>
       </cds-tile>
 
       <cds-tile>
         <div class="tile-heading">
           <svg class="tile-icon" viewBox="0 0 32 32">
-            <path d="M12 8a4 4 0 104 4 4 4 0 00-4-4zm0 6a2 2 0 112-2 2 2 0 01-2 2z" />
-            <path d="M24 8a4 4 0 104 4 4 4 0 00-4-4zm0 6a2 2 0 112-2 2 2 0 01-2 2z" />
-            <path d="M14 11h8v2h-8zM10 20h16v2H10z" />
+            <path d="M16 2a14 14 0 1014 14A14 14 0 0016 2zm0 26a12 12 0 1112-12 12 12 0 01-12 12z" />
+            <path d="M15 8h2v11h-2zM15 21h2v3h-2z" />
           </svg>
-          <span class="tile-label">Task 2</span>
+          <span class="tile-label">Support Materials</span>
         </div>
         <div class="tile-body">
-          Integrate third-party OAuth providers so students work with real external identity services and handle
-          provider configuration, redirects, and token exchange.
+          Task guidance is organized around Android app development, Firebase cloud database integration, Python
+          backend development, and machine learning integration. Slides introduce behavioral biometrics and refresh
+          Python machine learning with libraries such as scikit-learn.
         </div>
-        <cds-tag type="purple" size="sm" class="bottom-right-tag">Milestone 2</cds-tag>
+        <cds-tag type="purple" size="sm" class="bottom-right-tag">STU2</cds-tag>
+      </cds-tile>
+
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32">
+            <path d="M15 10h2v10h-2z" />
+            <path d="M10 15h12v2H10z" />
+            <path d="M26 4H6a2 2 0 00-2 2v20a2 2 0 002 2h20a2 2 0 002-2V6a2 2 0 00-2-2zM6 26V6h20v20z" />
+          </svg>
+          <span class="tile-label">Laboratory Exercises</span>
+        </div>
+        <div class="tile-body">
+          Dedicated setup labs walk students through Android Studio, Python backend setup, and Firebase configuration
+          in class, with clear deliverables such as a Hello World Android app, a basic backend workflow, and verified
+          database connectivity.
+        </div>
+        <cds-tag type="purple" size="sm" class="bottom-right-tag">STU3</cds-tag>
       </cds-tile>
 
       <cds-tile>
         <div class="tile-heading">
           <svg class="tile-icon" viewBox="0 0 32 32">
             <path
-              d="M16 3L4 9v6c0 7.2 5.1 13.9 12 15 6.9-1.1 12-7.8 12-15V9zm0 2.2L26 10v5c0 5.9-4 11.5-10 12.8C10 26.5 6 20.9 6 15v-5z" />
-            <path d="M16 11a3 3 0 013 3v2h1v6h-8v-6h1v-2a3 3 0 013-3zm-1 5h2v-2a1 1 0 10-2 0z" />
+              d="M26 2H6a2 2 0 00-2 2v24a2 2 0 002 2h20a2 2 0 002-2V4a2 2 0 00-2-2zM6 4h20v8H6zm0 10h9v14H6zm11 14V14h9v14z" />
           </svg>
-          <span class="tile-label">Task 3</span>
+          <span class="tile-label">Reference Materials</span>
         </div>
         <div class="tile-body">
-          Create a custom OAuth server or identity provider, requiring students to move beyond consumption of an
-          existing service and design core provider behavior themselves.
+          Reference links include videos, machine learning library documentation, Android swipe-event extraction
+          resources, Android and Firebase documentation, examples, and project report templates.
         </div>
-        <cds-tag type="purple" size="sm" class="bottom-right-tag">Milestone 3</cds-tag>
+        <cds-tag type="purple" size="sm" class="bottom-right-tag">STU4</cds-tag>
       </cds-tile>
     </div>
 
     <h3 class="subsection-title" style="margin-top: var(--spacing-10);">
       <svg class="subsection-icon" viewBox="0 0 32 32">
-        <path d="M26 30H6a2 2 0 01-2-2V4a2 2 0 012-2h14l8 8v18a2 2 0 01-2 2zM6 4v24h20V11h-7V4zm13 1.41L23.59 10H19z" />
+        <path
+          d="M30 30h-2v-5a5 5 0 00-5-5v-2a7 7 0 017 7zm-8-14a5 5 0 10-5-5 5 5 0 005 5zm0-8a3 3 0 11-3 3 3 3 0 013-3zM16 30H4v-5a7 7 0 017-7h6a7 7 0 017 7v5h-2v-5a5 5 0 00-5-5h-6a5 5 0 00-5 5v5h10z" />
       </svg>
-      Package Components In This Example
+      Instructor Support Package
     </h3>
     <p class="body-text">
-      FORAP packages the OAuth project through coordinated student, instructor, and assessment support. Across all
-      three components, materials are available in both text and video formats to improve accessibility and reuse.
+      The Touchalytics instructor materials help instructors adopt the project, plan its deployment, guide teams
+      through the mobile-cloud-ML workflow, and maintain the package as tools and platforms change.
     </p>
 
-    <div class="tile-grid tile-grid--3">
+    <div class="tile-grid tile-grid--2">
       <cds-tile>
         <div class="tile-heading">
           <svg class="tile-icon" viewBox="0 0 32 32">
             <path
-              d="M26 30h-2v-5a5 5 0 00-5-5h-6a5 5 0 00-5 5v5H6v-5a7 7 0 017-7h6a7 7 0 017 7zM16 4a5 5 0 11-5 5 5 5 0 015-5m0-2a7 7 0 107 7 7 7 0 00-7-7z" />
+              d="M26 2H6a2 2 0 00-2 2v24a2 2 0 002 2h20a2 2 0 002-2V4a2 2 0 00-2-2zM6 4h20v24H6zm4 4h12v2H10zm0 6h12v2H10zm0 6h8v2h-8z" />
           </svg>
-          <span class="tile-label">Student Support Package</span>
+          <span class="tile-label">Adoption Guidelines</span>
         </div>
         <div class="tile-body">
-          Includes background materials on single sign-on, federated identity, and OAuth; startup lab exercises such
-          as environment setup and connecting to an existing OAuth 2.0 provider; and task-specific guidance used
-          directly to complete the three project tasks.
+          An overview video and written README introduce the project package, project attributes, learning objectives,
+          task structure, support materials, and guidance for when and how to use the project. The guidelines also
+          describe possible variations, such as changing the programming language, cloud provider, or biometric signal.
         </div>
-        <cds-tag type="purple" size="sm" class="bottom-right-tag">Student-facing</cds-tag>
+        <cds-tag type="warm-gray" size="sm" class="bottom-right-tag">INS1</cds-tag>
       </cds-tile>
 
       <cds-tile>
         <div class="tile-heading">
           <svg class="tile-icon" viewBox="0 0 32 32">
             <path
-              d="M30 30h-2v-5a5 5 0 00-5-5v-2a7 7 0 017 7zm-8-14a5 5 0 10-5-5 5 5 0 005 5zm0-8a3 3 0 11-3 3 3 3 0 013-3zM16 30H4v-5a7 7 0 017-7h6a7 7 0 017 7v5h-2v-5a5 5 0 00-5-5h-6a5 5 0 00-5 5v5h10z" />
+              d="M28 4H4a2 2 0 00-2 2v14a2 2 0 002 2h8v4H8v2h16v-2h-4v-4h8a2 2 0 002-2V6a2 2 0 00-2-2zM18 26h-4v-4h4zM4 20V6h24v14z" />
           </svg>
-          <span class="tile-label">Instructor Support Package</span>
+          <span class="tile-label">Instructor Notes</span>
         </div>
         <div class="tile-body">
-          Includes notes on structuring and deploying the project, sample deployment schedules, guidance on team size,
-          timing, grading, project variations, and sample solutions aligned with the three tasks.
+          Deployment notes document the project file structure, four project tasks, support resources, sample grading,
+          common student challenges, team check-ins, setup support, Git use, Android gesture detection, Firebase
+          integration, backend development, machine learning preparation, and end-of-project reflection.
         </div>
-        <cds-tag type="warm-gray" size="sm" class="bottom-right-tag">Instructor-facing</cds-tag>
+        <cds-tag type="warm-gray" size="sm" class="bottom-right-tag">INS2</cds-tag>
+      </cds-tile>
+
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32">
+            <path d="M4 20v2h4.586L2 28.586 3.414 30 10 23.414V28h2v-8H4z" />
+            <path d="M26 2H6a2 2 0 00-2 2v12h2V4h20v16H16v2h10a2 2 0 002-2V4a2 2 0 00-2-2z" />
+          </svg>
+          <span class="tile-label">Implementation Sample</span>
+        </div>
+        <div class="tile-body">
+          A sample syllabus and schedule show how Touchalytics has been integrated into a course, including lectures,
+          setup labs, Android swipe capture, Firebase storage, Python backend development, machine learning, and final
+          app-backend prediction integration.
+        </div>
+        <cds-tag type="warm-gray" size="sm" class="bottom-right-tag">INS3</cds-tag>
+      </cds-tile>
+
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32">
+            <path d="M10 18h8v2h-8zM10 14h12v2H10zM10 10h12v2H10z" />
+            <path
+              d="M25 4h-3V2h-2v2h-8V2h-2v2H7a2 2 0 00-2 2v21a2 2 0 002 2h18a2 2 0 002-2V6a2 2 0 00-2-2zm0 23H7V6h3v2h2V6h8v2h2V6h3z" />
+          </svg>
+          <span class="tile-label">Sample Solutions</span>
+        </div>
+        <div class="tile-body">
+          A working solution codebase and video demonstrations show expected outcomes for each project phase, including
+          swipe capture, enrollment, Firebase data storage, backend prediction, verification, and final authentication
+          behavior.
+        </div>
+        <cds-tag type="warm-gray" size="sm" class="bottom-right-tag">INS4</cds-tag>
+      </cds-tile>
+
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32">
+            <path d="M22 8v2c3.3 0 6 2.7 6 6s-2.7 6-6 6v2c4.4 0 8-3.6 8-8s-3.6-8-8-8z" />
+            <path d="M16 30H4V2h18l6 6v6h-2V9h-5V4H6v24h10z" />
+          </svg>
+          <span class="tile-label">Sustainability Plan</span>
+        </div>
+        <div class="tile-body">
+          Maintenance documentation identifies materials that may need updates when Python versions, machine learning
+          libraries, Android Studio, Android SDKs, Firebase settings, or setup workflows change.
+        </div>
+        <cds-tag type="warm-gray" size="sm" class="bottom-right-tag">INS5</cds-tag>
+      </cds-tile>
+    </div>
+
+    <h3 class="subsection-title" style="margin-top: var(--spacing-10);">
+      <svg class="subsection-icon" viewBox="0 0 32 32">
+        <path d="M14 20.18l-3.59-3.59L9 18l5 5 9-9-1.41-1.42L14 20.18z" />
+        <path
+          d="M25 5h-3V4a2 2 0 00-2-2h-8a2 2 0 00-2 2v1H7a2 2 0 00-2 2v21a2 2 0 002 2h18a2 2 0 002-2V7a2 2 0 00-2-2zM12 4h8v4h-8zM25 28H7V7h3v3h12V7h3z" />
+      </svg>
+      Assessment Package
+    </h3>
+    <p class="body-text">
+      The Touchalytics assessment materials organize evaluation around the project's four numbered implementation
+      phases, while also helping instructors assess transfer beyond the original mobile authentication scenario.
+    </p>
+
+    <div class="tile-grid tile-grid--2">
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32">
+            <path d="M22 26H4V8h10V6H4a2 2 0 00-2 2v18a2 2 0 002 2h18a2 2 0 002-2V16h-2z" />
+            <path
+              d="M28.7 3.3a1 1 0 00-1.4 0L14 16.6V20h3.4L30.1 7.3a1 1 0 000-1.4zM16 18v-1l10.6-10.6 1 1L17 18z" />
+          </svg>
+          <span class="tile-label">Phased Milestones</span>
+        </div>
+        <div class="tile-body">
+          Four scaffolded milestones build on one another with increasing difficulty: Task 1, build a swipe-enabled
+          Android app; Task 2, extract and save swipe data to Firebase; Task 3, implement a Python backend for touch
+          behavioral biometrics; and Task 4, integrate swipe data with the Python backend for prediction.
+        </div>
+        <cds-tag type="cool-gray" size="sm" class="bottom-right-tag">ASM1</cds-tag>
+      </cds-tile>
+
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32">
+            <path d="M11 24h10v2H11zM13 28h6v2h-6z" />
+            <path
+              d="M16 2a10 10 0 00-6 18v3a1 1 0 001 1h10a1 1 0 001-1v-3A10 10 0 0016 2zm3.09 16.59l-.09.07V22h-6v-3.34l-.09-.07A8 8 0 1119.09 18.59z" />
+          </svg>
+          <span class="tile-label">Transfer-oriented Design Problems</span>
+        </div>
+        <div class="tile-body">
+          The package includes ten transfer-oriented design problems that ask students to apply project ideas to new
+          contexts and scenarios. It also includes a structured instructor prompt for generating additional design
+          problems with an LLM.
+        </div>
+        <cds-tag type="cool-gray" size="sm" class="bottom-right-tag">ASM2</cds-tag>
       </cds-tile>
 
       <cds-tile>
@@ -253,13 +369,14 @@
             <path
               d="M25 5h-3V4a2 2 0 00-2-2h-8a2 2 0 00-2 2v1H7a2 2 0 00-2 2v21a2 2 0 002 2h18a2 2 0 002-2V7a2 2 0 00-2-2zM12 4h8v4h-8zM25 28H7V7h3v3h12V7h3z" />
           </svg>
-          <span class="tile-label">Assessment Package</span>
+          <span class="tile-label">Detailed Rubric</span>
         </div>
         <div class="tile-body">
-          Includes the three task phases as assessment checkpoints together with a grading rubric aligned to the
-          expected student work across the project.
+          A detailed rubric evaluates each project phase with suggested grading weights and criteria for functional
+          implementation, data capture and storage, backend integration, model behavior, prediction accuracy, and final
+          demonstration quality.
         </div>
-        <cds-tag type="cool-gray" size="sm" class="bottom-right-tag">Assessment-facing</cds-tag>
+        <cds-tag type="cool-gray" size="sm" class="bottom-right-tag">ASM3</cds-tag>
       </cds-tile>
     </div>
 
@@ -267,33 +384,22 @@
       <svg class="subsection-icon" viewBox="0 0 32 32">
         <path d="M6 4h20v4H6zM6 14h20v4H6zM6 24h20v4H6z" />
       </svg>
-      Why This Example Works For FORAP
+      Why This Project Design Achieves FORAP Design Goals
     </h3>
-    <div class="tile-grid tile-grid--2">
+    <div class="tile-grid tile-grid--3">
       <cds-tile>
         <div class="tile-heading">
           <svg class="tile-icon" viewBox="0 0 32 32">
             <path d="M4 16h10v2H4zM18 16h10v2H18zM15 8h2v16h-2z" />
           </svg>
-          <span class="tile-label">Reusable Structure</span>
+          <span class="tile-label">Competency-to-task Alignment</span>
         </div>
         <div class="tile-body">
-          The project decomposes naturally into three phases, making it easy to reuse as-is or adapt to a shorter or
-          longer course deployment without losing instructional coherence.
+          The four project tasks directly support the competency statement by connecting mobile authentication,
+          behavioral swipe data collection, Firebase storage, Python backend processing, and machine learning
+          classification.
         </div>
-      </cds-tile>
-
-      <cds-tile>
-        <div class="tile-heading">
-          <svg class="tile-icon" viewBox="0 0 32 32">
-            <path d="M16 4l10 6v12l-10 6-10-6V10zm0 2.3L8 11v10l8 4.7 8-4.7V11z" />
-          </svg>
-          <span class="tile-label">Layered Difficulty</span>
-        </div>
-        <div class="tile-body">
-          Students progress from foundational authentication concepts to integration work and then to provider design,
-          which supports scaffolded learning in a technically demanding area.
-        </div>
+        <cds-tag type="blue" size="sm" class="bottom-right-tag">GOAL1</cds-tag>
       </cds-tile>
 
       <cds-tile>
@@ -301,26 +407,118 @@
           <svg class="tile-icon" viewBox="0 0 32 32">
             <path d="M8 6h16v2H8zM8 12h16v2H8zM8 18h10v2H8zM8 24h8v2H8z" />
           </svg>
-          <span class="tile-label">Package Alignment</span>
+          <span class="tile-label">Outcome-to-material Alignment</span>
         </div>
         <div class="tile-body">
-          Student support, instructor support, and assessment checkpoints all map directly onto the same three-task
-          project flow, which keeps the package internally consistent.
+          Student slides, setup labs, support guides, references, milestones, and rubrics map to the intended outcomes
+          in behavioral biometrics, Android development, Firebase integration, Python backend development, machine
+          learning, and teamwork.
         </div>
+        <cds-tag type="blue" size="sm" class="bottom-right-tag">GOAL1</cds-tag>
       </cds-tile>
 
       <cds-tile>
         <div class="tile-heading">
           <svg class="tile-icon" viewBox="0 0 32 32">
-            <path d="M10 8h12v2H10zM10 14h12v2H10zM10 20h8v2h-8z" />
-            <path d="M6 4h20v24H6zM8 6v20h16V6z" />
+            <path d="M4 28v-8h2v6h6v2H4zM28 4v8h-2V6h-6V4h8zM4 12V4h8v2H6v6H4zM20 28v-2h6v-6h2v8h-8z" />
           </svg>
-          <span class="tile-label">Assessment Visibility</span>
+          <span class="tile-label">Reusable Package Structure</span>
         </div>
         <div class="tile-body">
-          The phased structure gives instructors clear formative checkpoints for feedback, grading, and team progress
-          monitoring before the final project completion stage.
+          The project can be reused because it is organized into project tasks, installation guides, labs, support
+          materials, instructor notes, sample solutions, implementation examples, and assessment rubrics.
         </div>
+        <cds-tag type="blue" size="sm" class="bottom-right-tag">GOAL2</cds-tag>
+      </cds-tile>
+
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32">
+            <path d="M16 2l12 7v14l-12 7L4 23V9zm0 2.3L6 10v12l10 5.8L26 22V10z" />
+          </svg>
+          <span class="tile-label">Technology and Biometric Adaptation</span>
+        </div>
+        <div class="tile-body">
+          Instructors can adapt the programming language, backend framework, cloud provider, database, machine learning
+          library, or biometric signal while preserving the same project architecture.
+        </div>
+        <cds-tag type="blue" size="sm" class="bottom-right-tag">GOAL2</cds-tag>
+      </cds-tile>
+
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32">
+            <path d="M4 20h2v8H4zM10 14h2v14h-2zM16 18h2v10h-2zM22 10h2v18h-2zM28 6h2v22h-2z" />
+          </svg>
+          <span class="tile-label">Task Shielding With Black-box Components</span>
+        </div>
+        <div class="tile-body">
+          Instructors can focus students on selected tasks and provide black-box solutions for others. An
+          Android-focused course can provide the ML backend as runnable code, while a Python or ML course can provide a
+          built Android app for testing integration and prediction.
+        </div>
+        <cds-tag type="blue" size="sm" class="bottom-right-tag">GOAL2</cds-tag>
+      </cds-tile>
+
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32">
+            <path
+              d="M26 30h-2v-5a5 5 0 00-5-5h-6a5 5 0 00-5 5v5H6v-5a7 7 0 017-7h6a7 7 0 017 7zM16 4a5 5 0 11-5 5 5 5 0 015-5m0-2a7 7 0 107 7 7 7 0 00-7-7z" />
+          </svg>
+          <span class="tile-label">Student and Instructor Support</span>
+        </div>
+        <div class="tile-body">
+          Written and video setup guides, labs, background slides, references, README materials, instructor notes,
+          sample schedules, and solution demos reduce setup barriers and adoption effort.
+        </div>
+        <cds-tag type="blue" size="sm" class="bottom-right-tag">GOAL3</cds-tag>
+      </cds-tile>
+
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32">
+            <path d="M16 4l10 6v12l-10 6-10-6V10zm0 2.3L8 11v10l8 4.7 8-4.7V11z" />
+          </svg>
+          <span class="tile-label">Scaffolded Challenge</span>
+        </div>
+        <div class="tile-body">
+          The project remains high-complexity, but the work is staged from Android UI and swipe capture to Firebase
+          storage, Python backend development, machine learning classification, and final prediction integration.
+        </div>
+        <cds-tag type="blue" size="sm" class="bottom-right-tag">GOAL4</cds-tag>
+      </cds-tile>
+
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32">
+            <path d="M22 26H4V8h10V6H4a2 2 0 00-2 2v18a2 2 0 002 2h18a2 2 0 002-2V16h-2z" />
+            <path
+              d="M28.7 3.3a1 1 0 00-1.4 0L14 16.6V20h3.4L30.1 7.3a1 1 0 000-1.4zM16 18v-1l10.6-10.6 1 1L17 18z" />
+          </svg>
+          <span class="tile-label">Formative Assessment</span>
+        </div>
+        <div class="tile-body">
+          Setup labs, staged milestones, weekly check-ins, and intermediate deliverables give instructors clear points
+          for feedback before students complete the final integrated system.
+        </div>
+        <cds-tag type="blue" size="sm" class="bottom-right-tag">GOAL5</cds-tag>
+      </cds-tile>
+
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32">
+            <path d="M14 20.18l-3.59-3.59L9 18l5 5 9-9-1.41-1.42L14 20.18z" />
+            <path
+              d="M25 5h-3V4a2 2 0 00-2-2h-8a2 2 0 00-2 2v1H7a2 2 0 00-2 2v21a2 2 0 002 2h18a2 2 0 002-2V7a2 2 0 00-2-2zM12 4h8v4h-8zM25 28H7V7h3v3h12V7h3z" />
+          </svg>
+          <span class="tile-label">Summative and Transfer Assessment</span>
+        </div>
+        <div class="tile-body">
+          The final app behavior, backend prediction, demonstration, presentation, detailed rubric, and
+          transfer-oriented design problems support evaluation of implementation quality and learning transfer.
+        </div>
+        <cds-tag type="blue" size="sm" class="bottom-right-tag">GOAL5</cds-tag>
       </cds-tile>
     </div>
   </div>
