@@ -471,7 +471,7 @@ function initTagReferences() {
     ATT2: 'Attribute 2: Domain / Discipline',
     ATT3: 'Attribute 3: Scope / Duration',
     ATT4: 'Attribute 4: Technical Complexity',
-    ATT5: 'Attribute 5: Codebase Context',
+    ATT5: 'Attribute 5: Greenfield vs Brownfield Project',
     INS1: 'Instructor Support Package 1: Project Overview',
     INS2: 'Instructor Support Package 2: Instructor Notes',
     INS3: 'Instructor Support Package 3: Reference Course',
