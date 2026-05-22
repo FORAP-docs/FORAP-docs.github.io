@@ -213,6 +213,15 @@ cds-header-name {
   letter-spacing: 0.1px;
 }
 
+@media (max-width: 1055px) {
+  cds-header-name {
+    position: absolute;
+    left: auto;
+    right: 0;
+    margin-left: 0;
+  }
+}
+
 cds-header-menu-button {
   --cds-icon-primary: #ffffff;
   color: #ffffff !important;
@@ -286,6 +295,24 @@ cds-header-menu-button {
   width: 16px;
   height: 16px;
   fill: currentColor;
+}
+
+.top-tabs-bar .top-tab .tab-label--full {
+  display: inline;
+}
+
+.top-tabs-bar .top-tab .tab-label--mobile {
+  display: none;
+}
+
+@media (max-width: 671px) {
+  .top-tabs-bar .top-tab .tab-label--full {
+    display: none !important;
+  }
+
+  .top-tabs-bar .top-tab .tab-label--mobile {
+    display: inline !important;
+  }
 }
 
 

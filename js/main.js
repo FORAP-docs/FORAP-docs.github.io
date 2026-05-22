@@ -9,8 +9,8 @@
    -------------------------------------------------------------------------- */
 const ICONS = {
   // 16px Carbon icons for tabs and inline use
-  'student': '<svg viewBox="0 0 32 32" width="16" height="16" fill="currentColor"><path d="M26 30h-2v-5a5 5 0 00-5-5h-6a5 5 0 00-5 5v5H6v-5a7 7 0 017-7h6a7 7 0 017 7zM16 4a5 5 0 11-5 5 5 5 0 015-5m0-2a7 7 0 107 7 7 7 0 00-7-7z"/></svg>',
-  'instructor': '<svg viewBox="0 0 32 32" width="16" height="16" fill="currentColor"><path d="M30 30h-2v-5a5 5 0 00-5-5v-2a7 7 0 017 7zm-8-14a5 5 0 10-5-5 5 5 0 005 5zm0-8a3 3 0 11-3 3 3 3 0 013-3zM16 30H4v-5a7 7 0 017-7h6a7 7 0 017 7v5h-2v-5a5 5 0 00-5-5h-6a5 5 0 00-5 5v5h10z"/></svg>',
+  'student': '<svg viewBox="0 0 32 32" width="16" height="16" fill="currentColor"><path d="M30 30h-2v-5a5 5 0 00-5-5v-2a7 7 0 017 7zm-8-14a5 5 0 10-5-5 5 5 0 005 5zm0-8a3 3 0 11-3 3 3 3 0 013-3zM16 30H4v-5a7 7 0 017-7h6a7 7 0 017 7v5h-2v-5a5 5 0 00-5-5h-6a5 5 0 00-5 5v5h10z"/></svg>',
+  'instructor': '<svg viewBox="0 0 32 32" width="16" height="16" fill="currentColor"><path d="M26 30h-2v-5a5 5 0 00-5-5h-6a5 5 0 00-5 5v5H6v-5a7 7 0 017-7h6a7 7 0 017 7zM16 4a5 5 0 11-5 5 5 5 0 015-5m0-2a7 7 0 107 7 7 7 0 00-7-7z"/></svg>',
   'assessment': '<svg viewBox="0 0 32 32" width="16" height="16" fill="currentColor"><path d="M14 20.18l-3.59-3.59L9 18l5 5 9-9-1.41-1.42L14 20.18z"/><path d="M25 5h-3V4a2 2 0 00-2-2h-8a2 2 0 00-2 2v1H7a2 2 0 00-2 2v21a2 2 0 002 2h18a2 2 0 002-2V7a2 2 0 00-2-2zM12 4h8v4h-8zM25 28H7V7h3v3h12V7h3z"/></svg>',
   'steps-1-4': '<svg viewBox="0 0 32 32" width="20" height="20" fill="currentColor"><path d="M28 28H4a2 2 0 01-2-2V6a2 2 0 012-2h24a2 2 0 012 2v20a2 2 0 01-2 2zM4 6v20h24V6z"/><path d="M7 12h18v2H7zM7 17h18v2H7zM7 22h12v2H7z"/></svg>',
   'steps-5-7': '<svg viewBox="0 0 32 32" width="20" height="20" fill="currentColor"><path d="M28 10H20V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v6H4a2 2 0 00-2 2v16a2 2 0 002 2h24a2 2 0 002-2V12a2 2 0 00-2-2zM14 4h4v6h-4zM4 28V12h24v16z"/></svg>',
@@ -22,14 +22,14 @@ const ICONS = {
    -------------------------------------------------------------------------- */
 const PAGE_TABS = {
   packages: [
-    { id: 'instructor-panel', label: 'Instructor Support Package', icon: 'instructor' },
-    { id: 'student-panel', label: 'Student Support Package', icon: 'student' },
-    { id: 'assessment-panel', label: 'Assessment Package', icon: 'assessment' }
+    { id: 'instructor-panel', label: 'Instructor Support Package', mobileLabel: 'Instructor', icon: 'instructor' },
+    { id: 'student-panel', label: 'Student Support Package', mobileLabel: 'Student', icon: 'student' },
+    { id: 'assessment-panel', label: 'Assessment Package', mobileLabel: 'Assessment', icon: 'assessment' }
   ],
   steps: [
-    { id: 'steps-1-4', label: 'Steps 1–4: Foundation & Design', icon: 'steps-1-4' },
-    { id: 'steps-5-7', label: 'Steps 5–7: Package Creation', icon: 'steps-5-7' },
-    { id: 'steps-8-10', label: 'Steps 8–10: Review & Refine', icon: 'steps-8-10' }
+    { id: 'steps-1-4', label: 'Steps 1–4: Foundation & Design', mobileLabel: 'Steps 1–4', icon: 'steps-1-4' },
+    { id: 'steps-5-7', label: 'Steps 5–7: Support Package Creation', mobileLabel: 'Steps 5–7', icon: 'steps-5-7' },
+    { id: 'steps-8-10', label: 'Steps 8–10: Review & Refine', mobileLabel: 'Steps 8–10', icon: 'steps-8-10' }
   ]
 };
 
@@ -119,7 +119,10 @@ function updateTopTabs(pageId) {
   innerWrapper.innerHTML = tabs.map(tab => {
     const isActive = tab.id === defaultTab ? ' active' : '';
     const iconHtml = ICONS[tab.icon] ? `<span class="tab-icon" style="display:inline-flex;align-items:center;margin-right:0.5rem;opacity:0.9">${ICONS[tab.icon]}</span>` : '';
-    return `<button class="top-tab${isActive}" data-tab="${tab.id}" role="tab" aria-selected="${tab.id === defaultTab}">${iconHtml}${tab.label}</button>`;
+    const labelHtml = tab.mobileLabel
+      ? `<span class="tab-label tab-label--full">${tab.label}</span><span class="tab-label tab-label--mobile">${tab.mobileLabel}</span>`
+      : `<span class="tab-label">${tab.label}</span>`;
+    return `<button class="top-tab${isActive}" data-tab="${tab.id}" role="tab" aria-selected="${tab.id === defaultTab}" aria-label="${tab.label}">${iconHtml}${labelHtml}</button>`;
   }).join('');
 
   topBar.appendChild(innerWrapper);
@@ -443,10 +446,10 @@ function initTagReferences() {
       icon: '<svg viewBox="0 0 32 32" width="12" height="12" aria-hidden="true"><path d="M4 20h2v8H4zM10 14h2v14h-2zM16 18h2v10h-2zM22 10h2v18h-2zM28 6h2v22h-2z" /></svg>'
     },
     STU: {
-      icon: '<svg viewBox="0 0 32 32" width="12" height="12" aria-hidden="true"><path d="M26 30h-2v-5a5 5 0 00-5-5h-6a5 5 0 00-5 5v5H6v-5a7 7 0 017-7h6a7 7 0 017 7zM16 4a5 5 0 11-5 5 5 5 0 015-5m0-2a7 7 0 107 7 7 7 0 00-7-7z" /></svg>'
+      icon: '<svg viewBox="0 0 32 32" width="12" height="12" aria-hidden="true"><path d="M30 30h-2v-5a5 5 0 00-5-5v-2a7 7 0 017 7zm-8-14a5 5 0 10-5-5 5 5 0 005 5zm0-8a3 3 0 11-3 3 3 3 0 013-3zM16 30H4v-5a7 7 0 017-7h6a7 7 0 017 7v5h-2v-5a5 5 0 00-5-5h-6a5 5 0 00-5 5v5h10z" /></svg>'
     },
     INS: {
-      icon: '<svg viewBox="0 0 32 32" width="12" height="12" aria-hidden="true"><path d="M30 30h-2v-5a5 5 0 00-5-5v-2a7 7 0 017 7zm-8-14a5 5 0 10-5-5 5 5 0 005 5zm0-8a3 3 0 11-3 3 3 3 0 013-3zM16 30H4v-5a7 7 0 017-7h6a7 7 0 017 7v5h-2v-5a5 5 0 00-5-5h-6a5 5 0 00-5 5v5h10z" /></svg>'
+      icon: '<svg viewBox="0 0 32 32" width="12" height="12" aria-hidden="true"><path d="M26 30h-2v-5a5 5 0 00-5-5h-6a5 5 0 00-5 5v5H6v-5a7 7 0 017-7h6a7 7 0 017 7zM16 4a5 5 0 11-5 5 5 5 0 015-5m0-2a7 7 0 107 7 7 7 0 00-7-7z" /></svg>'
     },
     ASM: {
       icon: '<svg viewBox="0 0 32 32" width="12" height="12" aria-hidden="true"><path d="M14 20.18l-3.59-3.59L9 18l5 5 9-9-1.41-1.42L14 20.18z" /><path d="M25 5h-3V4a2 2 0 00-2-2h-8a2 2 0 00-2 2v1H7a2 2 0 00-2 2v21a2 2 0 002 2h18a2 2 0 002-2V7a2 2 0 00-2-2zM12 4h8v4h-8zM25 28H7V7h3v3h12V7h3z" /></svg>'
