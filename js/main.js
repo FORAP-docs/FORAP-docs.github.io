@@ -474,7 +474,7 @@ function initTagReferences() {
     ATT5: 'Attribute 5: Codebase Context',
     INS1: 'Instructor Support Package 1: Adoption Guidelines',
     INS2: 'Instructor Support Package 2: Instructor Notes',
-    INS3: 'Instructor Support Package 3: Implementation Sample',
+    INS3: 'Instructor Support Package 3: Reference Course',
     INS4: 'Instructor Support Package 4: Sample Solutions',
     INS5: 'Instructor Support Package 5: Sustainability Plan',
     STU1: 'Student Support Package 1: Installation Guidelines',
