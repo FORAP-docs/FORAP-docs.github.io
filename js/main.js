@@ -476,7 +476,6 @@ function initTagReferences() {
     INS2: 'Instructor Support Package 2: Instructor Notes',
     INS3: 'Instructor Support Package 3: Reference Course',
     INS4: 'Instructor Support Package 4: Sample Solutions',
-    INS5: 'Instructor Support Package 5: Sustainability Plan',
     STU1: 'Student Support Package 1: Installation Guidelines',
     STU2: 'Student Support Package 2: Support Materials',
     STU3: 'Student Support Package 3: Laboratory Exercises',
