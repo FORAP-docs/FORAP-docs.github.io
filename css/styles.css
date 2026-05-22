@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FORAP Documentation Website — Custom Styles
+   FORAP Documentation Website - Custom Styles
    Complements Carbon Design System Web Components v2
    Theme: Carbon g100 header + White content area
    ========================================================================== */
@@ -67,7 +67,7 @@ cds-side-nav-menu:not(:defined) {
   --spacing-13: 10rem;
   /* 160px */
 
-  /* Colors — Carbon g100 header + white theme content */
+  /* Colors - Carbon g100 header + white theme content */
   --cds-background: #f4f4f4;
   --cds-background-inverse: #161616;
   --cds-layer-01: #ffffff;
@@ -109,7 +109,7 @@ cds-side-nav-menu:not(:defined) {
   --cds-tag-background-teal: #9ef0f0;
   --cds-tag-color-teal: #004144;
 
-  /* Type scale — Carbon productive (bumped for readability) */
+  /* Type scale - Carbon productive (bumped for readability) */
   --type-body-compact-01: 0.875rem;
   /* 14px */
   --type-body-01: 1rem;
@@ -134,13 +134,13 @@ cds-side-nav-menu:not(:defined) {
 
   /* Layout */
   --header-height: 3rem;
-  /* 48px — Carbon header height */
+  /* 48px - Carbon header height */
   --top-nav-height: 3rem;
-  /* 48px — contextual tabs bar */
+  /* 48px - contextual tabs bar */
   --side-nav-width: 16rem;
   /* 256px */
   --content-max-width: 84rem;
-  /* 1344px — Carbon max width */
+  /* 1344px - Carbon max width */
 
   --cds-font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 
@@ -191,7 +191,7 @@ body {
 }
 
 /* --------------------------------------------------------------------------
-   Carbon Header Override — g100 (black) theme
+   Carbon Header Override - g100 (black) theme
    -------------------------------------------------------------------------- */
 cds-header {
   --cds-background-brand: #161616;
@@ -318,7 +318,7 @@ cds-header-menu-button {
 
 
 /* --------------------------------------------------------------------------
-   Side Navigation — Carbon g90 panel style
+   Side Navigation - Carbon g90 panel style
    -------------------------------------------------------------------------- */
 cds-side-nav {
   --cds-side-nav-bg: #ffffff;
@@ -408,7 +408,7 @@ cds-side-nav-menu-item::part(link) {
 }
 
 /* --------------------------------------------------------------------------
-   Page Sections — each is a full page, only one visible at a time
+   Page Sections - each is a full page, only one visible at a time
    -------------------------------------------------------------------------- */
 .page-section {
   padding-top: 0;
@@ -423,7 +423,7 @@ cds-side-nav-menu-item::part(link) {
 /* Removed to keep ash background everywhere */
 
 /* --------------------------------------------------------------------------
-   Page Hero Banner — dark background for page titles (Carbon style)
+   Page Hero Banner - dark background for page titles (Carbon style)
    -------------------------------------------------------------------------- */
 .page-hero {
   background-color: var(--cds-background-inverse);
@@ -497,7 +497,7 @@ cds-side-nav-menu-item::part(link) {
 }
 
 /* --------------------------------------------------------------------------
-   Typography — Carbon productive, sized up
+   Typography - Carbon productive, sized up
    -------------------------------------------------------------------------- */
 .page-title {
   font-size: var(--type-heading-07);
@@ -599,7 +599,7 @@ cds-side-nav-menu-item::part(link) {
 }
 
 /* --------------------------------------------------------------------------
-   Tile / Card Grids — Carbon-authentic styling
+   Tile / Card Grids - Carbon-authentic styling
    -------------------------------------------------------------------------- */
 .tile-grid {
   display: grid;
@@ -655,7 +655,7 @@ cds-side-nav-menu-item::part(link) {
   }
 }
 
-/* Carbon-authentic tile styling — flat, no heavy borders */
+/* Carbon-authentic tile styling - flat, no heavy borders */
 .tile-grid cds-tile {
   display: flex;
   flex-direction: column;
@@ -823,13 +823,33 @@ cds-tag {
 
 @media (min-width: 1056px) {
   .snapshot-grid {
-    grid-template-columns: 1.3fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1.3fr;
     align-items: stretch;
   }
 
-  .snapshot-grid__competency {
+  .snapshot-grid > cds-tile:nth-child(1) {
     grid-column: 1;
-    grid-row: span 2;
+    grid-row: 1;
+  }
+
+  .snapshot-grid > cds-tile:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .snapshot-grid > cds-tile:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .snapshot-grid > cds-tile:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .snapshot-grid__competency {
+    grid-column: 3;
+    grid-row: 1 / span 2;
   }
 }
 
@@ -993,7 +1013,7 @@ cds-tag[type="gray"] {
 }
 
 /* --------------------------------------------------------------------------
-   overview "What FORAP is / is not" tiles — side by side, icons per line
+   overview "What FORAP is / is not" tiles - side by side, icons per line
    -------------------------------------------------------------------------- */
 .overview-tiles {
   display: grid;

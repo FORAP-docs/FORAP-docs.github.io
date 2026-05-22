@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FORAP Documentation Website — Main JavaScript
+   FORAP Documentation Website - Main JavaScript
    Handles: page-based routing, active nav states, contextual top tabs,
             mobile nav toggle, tab panel management
    ========================================================================== */
@@ -18,7 +18,7 @@ const ICONS = {
 };
 
 /* --------------------------------------------------------------------------
-   Page configuration — defines which pages have contextual top tabs
+   Page configuration - defines which pages have contextual top tabs
    -------------------------------------------------------------------------- */
 const PAGE_TABS = {
   packages: [
@@ -27,9 +27,9 @@ const PAGE_TABS = {
     { id: 'assessment-panel', label: 'Assessment Package', mobileLabel: 'Assessment', icon: 'assessment' }
   ],
   steps: [
-    { id: 'steps-1-4', label: 'Steps 1–4: Foundation & Design', mobileLabel: 'Steps 1–4', icon: 'steps-1-4' },
-    { id: 'steps-5-7', label: 'Steps 5–7: Support Package Creation', mobileLabel: 'Steps 5–7', icon: 'steps-5-7' },
-    { id: 'steps-8-10', label: 'Steps 8–10: Review & Refine', mobileLabel: 'Steps 8–10', icon: 'steps-8-10' }
+    { id: 'steps-1-4', label: 'Steps 1-4: Foundation & Design', mobileLabel: 'Steps 1-4', icon: 'steps-1-4' },
+    { id: 'steps-5-7', label: 'Steps 5-7: Support Package Creation', mobileLabel: 'Steps 5-7', icon: 'steps-5-7' },
+    { id: 'steps-8-10', label: 'Steps 8-10: Review & Refine', mobileLabel: 'Steps 8-10', icon: 'steps-8-10' }
   ]
 };
 
@@ -40,7 +40,7 @@ let currentPage = 'overview';
 let currentSubTab = {};  // { packages: 'instructor-panel', steps: 'steps-1-4' }
 
 /* --------------------------------------------------------------------------
-   Page Navigation — show/hide sections
+   Page Navigation - show/hide sections
    -------------------------------------------------------------------------- */
 function navigateToPage(pageId) {
   if (!pageId) pageId = 'overview';
@@ -81,7 +81,7 @@ function navigateToPage(pageId) {
 }
 
 /* --------------------------------------------------------------------------
-   Top Tabs Bar — contextual tabs per page
+   Top Tabs Bar - contextual tabs per page
    -------------------------------------------------------------------------- */
 function updateTopTabs(pageId) {
   // Remove existing tabs bar if any
@@ -189,7 +189,7 @@ function initNavigation() {
     });
   });
 
-  // cds-side-nav-menu parent title click → navigate to the page
+  // cds-side-nav-menu parent title click - navigate to the page
   document.querySelectorAll('cds-side-nav-menu[data-page]').forEach(menu => {
     menu.addEventListener('click', (e) => {
       const pageId = menu.getAttribute('data-page');
@@ -467,11 +467,11 @@ function initTagReferences() {
     GOAL3: 'Goal 3: Support for Teaching and Learning',
     GOAL4: 'Goal 4: Appropriateness of Challenges',
     GOAL5: 'Goal 5: Formative and Summative Assessment',
-    ATT1: 'Attribute 1: Competency Specification',
-    ATT2: 'Attribute 2: Domain / Discipline',
-    ATT3: 'Attribute 3: Scope / Duration',
-    ATT4: 'Attribute 4: Technical Complexity',
-    ATT5: 'Attribute 5: Greenfield vs Brownfield Project',
+    ATT1: 'Attribute 1: Greenfield vs Brownfield Project',
+    ATT2: 'Attribute 2: Scope / Duration',
+    ATT3: 'Attribute 3: Technical Complexity',
+    ATT4: 'Attribute 4: Domain / Discipline',
+    ATT5: 'Attribute 5: Competency Specification',
     INS1: 'Instructor Support Package 1: Project Overview',
     INS2: 'Instructor Support Package 2: Instructor Notes',
     INS3: 'Instructor Support Package 3: Reference Course',

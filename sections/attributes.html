@@ -26,26 +26,13 @@
         <div class="tile-heading">
           <svg class="tile-icon" viewBox="0 0 32 32">
             <path
-              d="M26 22a3.96 3.96 0 00-2.81 1.15l-7.53-4.52a4.11 4.11 0 000-1.26l7.53-4.52A4 4 0 1022 10a3.95 3.95 0 001.16 2.79l-7.53 4.52a4 4 0 00-2.31-2.79L20.84 7A4 4 0 1018 4a3.95 3.95 0 001.16 2.79l-7.53 4.52a4.11 4.11 0 000 1.26l7.53 4.52A4 4 0 1022 22a3.96 3.96 0 00-1.15-2.81l-7.53-4.52a4 4 0 00-5.64 0L6.53 9.3A4 4 0 104 10a3.95 3.95 0 001.16 2.79l7.53 4.52a4.11 4.11 0 000 1.26l-7.53 4.52A4 4 0 108 26a3.95 3.95 0 00-1.16-2.79l7.53-4.52a4 4 0 002.31 2.79L15.16 29A4 4 0 1018 32a3.95 3.95 0 00-1.16-2.79l7.53-4.52A4 4 0 1026 22z" />
+              d="M26 2H6a2 2 0 00-2 2v24a2 2 0 002 2h20a2 2 0 002-2V4a2 2 0 00-2-2zM6 4h20v24H6zm10 18l5-5-5-5-1.4 1.4 3.6 3.6-3.6 3.6L16 22zm-4-10L7 17l5 5 1.4-1.4L9.8 17l3.6-3.6L12 12z" />
           </svg>
-          <span class="tile-label">Competency Specification</span>
+          <span class="tile-label">Greenfield vs Brownfield Project</span>
         </div>
-        <div class="tile-body">Learning objectives should be written in a clear, structured, and comparable format so
-          they can be compared across projects, courses, and curricula, such as through the competency model of CC2020.
-        </div>
+        <div class="tile-body">Whether the project starts from a new codebase students build from scratch or an
+          existing system students modify, extend, test, refactor, or maintain.</div>
         <cds-tag type="red" size="sm">ATT1</cds-tag>
-      </cds-tile>
-
-      <cds-tile>
-        <div class="tile-heading">
-          <svg class="tile-icon" viewBox="0 0 32 32">
-            <path d="M16 2a14 14 0 1014 14A14 14 0 0016 2zm8 15h-6v6h-4v-6H8v-2h6V9h4v6h6z" />
-          </svg>
-          <span class="tile-label">Domains / Disciplines</span>
-        </div>
-        <div class="tile-body">The computing areas or subject contexts in which the project is situated such as software
-          engineering, cybersecurity, databases, artificial intelligence, or web development.</div>
-        <cds-tag type="red" size="sm">ATT2</cds-tag>
       </cds-tile>
 
       <cds-tile>
@@ -57,7 +44,7 @@
         </div>
         <div class="tile-body">The expected size of the project and the time required for completion, from shorter
           modules to full-semester projects.</div>
-        <cds-tag type="red" size="sm">ATT3</cds-tag>
+        <cds-tag type="red" size="sm">ATT2</cds-tag>
       </cds-tile>
 
       <cds-tile>
@@ -70,6 +57,18 @@
         </div>
         <div class="tile-body">The expected level of difficulty in terms of technical depth, integration effort, tools,
           concepts, and implementation demands.</div>
+        <cds-tag type="red" size="sm">ATT3</cds-tag>
+      </cds-tile>
+
+      <cds-tile>
+        <div class="tile-heading">
+          <svg class="tile-icon" viewBox="0 0 32 32">
+            <path d="M16 2a14 14 0 1014 14A14 14 0 0016 2zm8 15h-6v6h-4v-6H8v-2h6V9h4v6h6z" />
+          </svg>
+          <span class="tile-label">Domains / Disciplines</span>
+        </div>
+        <div class="tile-body">The computing areas or subject contexts in which the project is situated such as software
+          engineering, cybersecurity, databases, artificial intelligence, or web development.</div>
         <cds-tag type="red" size="sm">ATT4</cds-tag>
       </cds-tile>
 
@@ -77,12 +76,13 @@
         <div class="tile-heading">
           <svg class="tile-icon" viewBox="0 0 32 32">
             <path
-              d="M26 2H6a2 2 0 00-2 2v24a2 2 0 002 2h20a2 2 0 002-2V4a2 2 0 00-2-2zM6 4h20v24H6zm10 18l5-5-5-5-1.4 1.4 3.6 3.6-3.6 3.6L16 22zm-4-10L7 17l5 5 1.4-1.4L9.8 17l3.6-3.6L12 12z" />
+              d="M26 22a3.96 3.96 0 00-2.81 1.15l-7.53-4.52a4.11 4.11 0 000-1.26l7.53-4.52A4 4 0 1022 10a3.95 3.95 0 001.16 2.79l-7.53 4.52a4 4 0 00-2.31-2.79L20.84 7A4 4 0 1018 4a3.95 3.95 0 001.16 2.79l-7.53 4.52a4.11 4.11 0 000 1.26l7.53 4.52A4 4 0 1022 22a3.96 3.96 0 00-1.15-2.81l-7.53-4.52a4 4 0 00-5.64 0L6.53 9.3A4 4 0 104 10a3.95 3.95 0 001.16 2.79l7.53 4.52a4.11 4.11 0 000 1.26l-7.53 4.52A4 4 0 108 26a3.95 3.95 0 00-1.16-2.79l7.53-4.52a4 4 0 002.31 2.79L15.16 29A4 4 0 1018 32a3.95 3.95 0 00-1.16-2.79l7.53-4.52A4 4 0 1026 22z" />
           </svg>
-          <span class="tile-label">Greenfield vs Brownfield Project</span>
+          <span class="tile-label">Competency Specification</span>
         </div>
-        <div class="tile-body">Whether the project starts from a new codebase students build from scratch or an
-          existing system students modify, extend, test, refactor, or maintain.</div>
+        <div class="tile-body">Learning objectives should be written in a clear, structured, and comparable format so
+          they can be compared across projects, courses, and curricula, such as through the competency model of CC2020.
+        </div>
         <cds-tag type="red" size="sm">ATT5</cds-tag>
       </cds-tile>
 

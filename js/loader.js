@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Section Loader — fetches HTML partials and injects them into the page.
+   Section Loader - fetches HTML partials and injects them into the page.
    Intended for HTTP/HTTPS hosting.
    ========================================================================== */
 
