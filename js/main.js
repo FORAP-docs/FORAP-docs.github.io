@@ -22,14 +22,14 @@ const ICONS = {
    -------------------------------------------------------------------------- */
 const PAGE_TABS = {
   packages: [
-    { id: 'instructor-panel', label: 'Instructor Support Package', mobileLabel: 'Instructor', icon: 'instructor' },
-    { id: 'student-panel', label: 'Student Support Package', mobileLabel: 'Student', icon: 'student' },
-    { id: 'assessment-panel', label: 'Assessment Package', mobileLabel: 'Assessment', icon: 'assessment' }
+    { id: 'instructor-panel', slug: 'instructor', label: 'Instructor Support Package', mobileLabel: 'Instructor', icon: 'instructor' },
+    { id: 'student-panel', slug: 'student', label: 'Student Support Package', mobileLabel: 'Student', icon: 'student' },
+    { id: 'assessment-panel', slug: 'assessment', label: 'Assessment Package', mobileLabel: 'Assessment', icon: 'assessment' }
   ],
   steps: [
-    { id: 'steps-1-4', label: 'Steps 1-4: Foundation & Design', mobileLabel: 'Steps 1-4', icon: 'steps-1-4' },
-    { id: 'steps-5-7', label: 'Steps 5-7: Support Package Creation', mobileLabel: 'Steps 5-7', icon: 'steps-5-7' },
-    { id: 'steps-8-10', label: 'Steps 8-10: Review & Refine', mobileLabel: 'Steps 8-10', icon: 'steps-8-10' }
+    { id: 'steps-1-4', slug: '1-4', label: 'Steps 1-4: Foundation & Design', mobileLabel: 'Steps 1-4', icon: 'steps-1-4' },
+    { id: 'steps-5-7', slug: '5-7', label: 'Steps 5-7: Support Package Creation', mobileLabel: 'Steps 5-7', icon: 'steps-5-7' },
+    { id: 'steps-8-10', slug: '8-10', label: 'Steps 8-10: Review & Refine', mobileLabel: 'Steps 8-10', icon: 'steps-8-10' }
   ]
 };
 
@@ -40,10 +40,52 @@ let currentPage = 'overview';
 let currentSubTab = {};  // { packages: 'instructor-panel', steps: 'steps-1-4' }
 
 /* --------------------------------------------------------------------------
+   Hash routing helpers
+   -------------------------------------------------------------------------- */
+function getTabById(pageId, tabId) {
+  return PAGE_TABS[pageId]?.find(tab => tab.id === tabId) || null;
+}
+
+function getTabBySlug(pageId, slug) {
+  return PAGE_TABS[pageId]?.find(tab => tab.slug === slug || tab.id === slug) || null;
+}
+
+function getHashForPage(pageId, tabId = null) {
+  const tab = tabId ? getTabById(pageId, tabId) : null;
+  return tab ? `#${pageId}/${tab.slug}` : `#${pageId}`;
+}
+
+function parseHashRoute(hash = window.location.hash) {
+  const cleanHash = hash.replace(/^#/, '');
+  const [pageId = 'overview', tabSlug] = cleanHash.split('/');
+  const pageTabs = PAGE_TABS[pageId];
+  const tab = pageTabs && tabSlug ? getTabBySlug(pageId, tabSlug) : null;
+  const targetPageId = document.getElementById(pageId) ? pageId : 'overview';
+
+  return {
+    pageId: targetPageId,
+    tabId: tab?.id || null
+  };
+}
+
+function navigateToHashRoute(hash = window.location.hash) {
+  const { pageId, tabId } = parseHashRoute(hash);
+
+  if (tabId) {
+    currentSubTab[pageId] = tabId;
+  } else if (PAGE_TABS[pageId]) {
+    delete currentSubTab[pageId];
+  }
+
+  navigateToPage(pageId);
+}
+
+/* --------------------------------------------------------------------------
    Page Navigation - show/hide sections
    -------------------------------------------------------------------------- */
 function navigateToPage(pageId) {
   if (!pageId) pageId = 'overview';
+  if (!document.getElementById(pageId)) pageId = 'overview';
 
   // Hide all sections
   document.querySelectorAll('.page-section').forEach(s => {
@@ -131,6 +173,7 @@ function updateTopTabs(pageId) {
   topBar.querySelectorAll('.top-tab').forEach(btn => {
     btn.addEventListener('click', () => {
       const tabId = btn.getAttribute('data-tab');
+      history.pushState(null, '', getHashForPage(pageId, tabId));
       switchSubTab(pageId, tabId);
     });
   });
@@ -183,7 +226,7 @@ function initNavigation() {
       e.preventDefault();
       const pageId = link.getAttribute('data-page');
       if (pageId) {
-        history.pushState(null, '', `#${pageId}`);
+        history.pushState(null, '', getHashForPage(pageId));
         navigateToPage(pageId);
       }
     });
@@ -194,7 +237,7 @@ function initNavigation() {
     menu.addEventListener('click', (e) => {
       const pageId = menu.getAttribute('data-page');
       if (pageId) {
-        history.pushState(null, '', `#${pageId}`);
+        history.pushState(null, '', getHashForPage(pageId));
         navigateToPage(pageId);
       }
     });
@@ -209,7 +252,7 @@ function initNavigation() {
       const subsection = item.getAttribute('data-subsection');
 
       if (pageId) {
-        history.pushState(null, '', `#${pageId}`);
+        history.pushState(null, '', subtab ? getHashForPage(pageId, subtab) : getHashForPage(pageId));
         navigateToPage(pageId);
 
         // Switch to a specific tab (packages)
@@ -525,7 +568,7 @@ function initTagReferences() {
     const reference = referenceMap.get(code);
     if (!reference) return;
 
-    history.pushState(null, '', `#${reference.page}`);
+    history.pushState(null, '', getHashForPage(reference.page, reference.tab));
     navigateToPage(reference.page);
 
     if (reference.tab) {
@@ -605,6 +648,9 @@ function initMobileNav() {
    Handle browser back/forward navigation
    -------------------------------------------------------------------------- */
 window.addEventListener('popstate', () => {
-  const hash = window.location.hash.replace('#', '') || 'overview';
-  navigateToPage(hash);
+  navigateToHashRoute();
+});
+
+window.addEventListener('hashchange', () => {
+  navigateToHashRoute();
 });

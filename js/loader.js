@@ -59,8 +59,12 @@ function initializePage() {
     initTagReferences();
   }
 
-  const hash = window.location.hash.replace('#', '') || 'overview';
-  navigateToPage(hash);
+  if (typeof navigateToHashRoute === 'function') {
+    navigateToHashRoute();
+  } else {
+    const hash = window.location.hash.replace('#', '').split('/')[0] || 'overview';
+    navigateToPage(hash);
+  }
 }
 
 document.addEventListener('DOMContentLoaded', loadSections);
