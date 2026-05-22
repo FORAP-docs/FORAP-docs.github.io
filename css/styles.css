@@ -1653,19 +1653,13 @@ cds-accordion-item::part(title) {
 
 .site-footer__columns {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--spacing-07);
 }
 
 @media (min-width: 672px) {
   .site-footer__columns {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: var(--spacing-08);
-  }
-}
-
-@media (max-width: 671px) {
-  .site-footer__columns .site-footer__list+.site-footer__list {
-    padding-top: var(--spacing-02);
   }
 }
 
@@ -1723,7 +1717,9 @@ cds-accordion-item::part(title) {
 
 .site-footer__meta-inner {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   gap: var(--spacing-03);
   padding-top: var(--spacing-05);
   padding-bottom: var(--spacing-05);
@@ -1735,16 +1731,8 @@ cds-accordion-item::part(title) {
 }
 
 @media (max-width: 671px) {
-  .site-footer__meta-inner p:last-child {
-    padding-bottom: env(safe-area-inset-bottom);
-  }
-}
-
-@media (min-width: 672px) {
   .site-footer__meta-inner {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    padding-bottom: env(safe-area-inset-bottom);
   }
 }
 
