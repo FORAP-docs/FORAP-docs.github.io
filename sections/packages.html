@@ -1,7 +1,7 @@
 <!-- ====================================================================
      SECTION: Project Package Components
      Content matches FORAP.md Section 3 exactly
-     Tab panels controlled by top bar tabs (student, instructor, assessment)
+     Tab panels controlled by top bar tabs (instructor, student, assessment)
      ==================================================================== -->
 <section id="packages" class="page-section">
   <!-- Hero Banner -->
@@ -16,8 +16,8 @@
       </h2>
       <p class="section-description">
         FORAP organizes each project as a coordinated package built around aligned learning
-        objectives and supported through three complementary components: a Student Support Package,
-        an Instructor Support Package, and an Assessment Package. Together, these components are
+        objectives and supported through three complementary components: an Instructor Support Package,
+        a Student Support Package, and an Assessment Package. Together, these components are
         intended to support reuse and adaptation, reduce adoption effort, support student progress,
         and strengthen project assessment.
       </p>
@@ -25,89 +25,8 @@
   </div>
   <div class="content-wrapper">
 
-    <!-- Tab Panel: Student Support Package -->
-    <div id="student-panel" class="tab-panel active" role="tabpanel">
-      <div class="tab-panel-content">
-        <h3 class="subsection-title">
-          <svg class="subsection-icon" viewBox="0 0 32 32">
-            <path
-              d="M26 30h-2v-5a5 5 0 00-5-5h-6a5 5 0 00-5 5v5H6v-5a7 7 0 017-7h6a7 7 0 017 7zM16 4a5 5 0 11-5 5 5 5 0 015-5m0-2a7 7 0 107 7 7 7 0 00-7-7z" />
-          </svg>
-          Student Support Package
-        </h3>
-        <p class="body-text">The Student Support Package includes the materials provided to help students make progress
-          during project work. It is designed to address common technical challenges students face, especially
-          installation/configuration issues, prerequisite gaps, and difficulties encountered while completing project
-          tasks.
-        </p>
-
-        <div class="tile-grid tile-grid--3">
-          <cds-tile>
-            <div class="tile-heading">
-              <svg class="tile-icon" viewBox="0 0 32 32">
-                <path d="M30 10h-6a2 2 0 01-2-2V2h2v6h6z" />
-                <path d="M22 30H10a2 2 0 01-2-2V4a2 2 0 012-2h12l8 8v18a2 2 0 01-2 2zM10 4v24h18V11h-7V4z" />
-                <path d="M12 18h14v2H12zM12 24h14v2H12z" />
-              </svg>
-              <span class="tile-label">Installation Guidelines</span>
-            </div>
-            <div class="tile-body">Written and Video materials that help students install, configure, and access the
-              required
-              tools and environments for the project. Including compilers, IDEs, DBMS, Web servers, and setting up
-              existing systems.</div>
-            <cds-tag type="purple" size="sm">STU1</cds-tag>
-          </cds-tile>
-
-          <cds-tile>
-            <div class="tile-heading">
-              <svg class="tile-icon" viewBox="0 0 32 32">
-                <path d="M16 2a14 14 0 1014 14A14 14 0 0016 2zm0 26a12 12 0 1112-12 12 12 0 01-12 12z" />
-                <path d="M15 8h2v11h-2zM15 21h2v3h-2z" />
-              </svg>
-              <span class="tile-label">Support Materials</span>
-            </div>
-            <div class="tile-body">Project-specific scaffolding that students use directly to complete
-              tasks, such as task instructions, milestone checklists, starter codes, required configuration files,
-              task-specific troubleshooting guidance, and diagrams that guide implementation decisions.</div>
-            <cds-tag type="purple" size="sm">STU2</cds-tag>
-          </cds-tile>
-
-          <cds-tile>
-            <div class="tile-heading">
-              <svg class="tile-icon" viewBox="0 0 32 32">
-                <path d="M15 10h2v10h-2z" />
-                <path d="M10 15h12v2H10z" />
-                <path d="M26 4H6a2 2 0 00-2 2v20a2 2 0 002 2h20a2 2 0 002-2V6a2 2 0 00-2-2zM6 26V6h20v20z" />
-              </svg>
-              <span class="tile-label">Laboratory Exercises</span>
-            </div>
-            <div class="tile-body">Targeted exercises that help students get started with the project and build
-              prerequisite knowledge and
-              prepare for project tasks, such as learning to use a programming or markup language, GitHub, a database
-              system, or a language framework.</div>
-            <cds-tag type="purple" size="sm">STU3</cds-tag>
-          </cds-tile>
-
-          <cds-tile>
-            <div class="tile-heading">
-              <svg class="tile-icon" viewBox="0 0 32 32">
-                <path
-                  d="M26 2H6a2 2 0 00-2 2v24a2 2 0 002 2h20a2 2 0 002-2V4a2 2 0 00-2-2zM6 4h20v8H6zm0 10h9v14H6zm11 14V14h9v14z" />
-              </svg>
-              <span class="tile-label">Reference Materials</span>
-            </div>
-            <div class="tile-body">Resources students consult as needed for background understanding, such
-              as official documentation for APIs, languages, and frameworks, protocol specifications, report templates,
-              example artifacts, and other supporting references.</div>
-            <cds-tag type="purple" size="sm">STU4</cds-tag>
-          </cds-tile>
-
-        </div>
-      </div>
-    </div>
-
     <!-- Tab Panel: Instructor Support Package -->
-    <div id="instructor-panel" class="tab-panel" role="tabpanel">
+    <div id="instructor-panel" class="tab-panel active" role="tabpanel">
       <div class="tab-panel-content">
         <h3 class="subsection-title">
           <svg class="subsection-icon" viewBox="0 0 32 32">
@@ -188,6 +107,87 @@
               including which files, dependencies, tools, and setup instructions may need revision as software versions,
               platforms, and technologies change.</div>
             <cds-tag type="warm-gray" size="sm">INS5</cds-tag>
+          </cds-tile>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab Panel: Student Support Package -->
+    <div id="student-panel" class="tab-panel" role="tabpanel">
+      <div class="tab-panel-content">
+        <h3 class="subsection-title">
+          <svg class="subsection-icon" viewBox="0 0 32 32">
+            <path
+              d="M26 30h-2v-5a5 5 0 00-5-5h-6a5 5 0 00-5 5v5H6v-5a7 7 0 017-7h6a7 7 0 017 7zM16 4a5 5 0 11-5 5 5 5 0 015-5m0-2a7 7 0 107 7 7 7 0 00-7-7z" />
+          </svg>
+          Student Support Package
+        </h3>
+        <p class="body-text">The Student Support Package includes the materials provided to help students make progress
+          during project work. It is designed to address common technical challenges students face, especially
+          installation/configuration issues, prerequisite gaps, and difficulties encountered while completing project
+          tasks.
+        </p>
+
+        <div class="tile-grid tile-grid--3">
+          <cds-tile>
+            <div class="tile-heading">
+              <svg class="tile-icon" viewBox="0 0 32 32">
+                <path d="M30 10h-6a2 2 0 01-2-2V2h2v6h6z" />
+                <path d="M22 30H10a2 2 0 01-2-2V4a2 2 0 012-2h12l8 8v18a2 2 0 01-2 2zM10 4v24h18V11h-7V4z" />
+                <path d="M12 18h14v2H12zM12 24h14v2H12z" />
+              </svg>
+              <span class="tile-label">Installation Guidelines</span>
+            </div>
+            <div class="tile-body">Written and Video materials that help students install, configure, and access the
+              required
+              tools and environments for the project. Including compilers, IDEs, DBMS, Web servers, and setting up
+              existing systems.</div>
+            <cds-tag type="purple" size="sm">STU1</cds-tag>
+          </cds-tile>
+
+          <cds-tile>
+            <div class="tile-heading">
+              <svg class="tile-icon" viewBox="0 0 32 32">
+                <path d="M16 2a14 14 0 1014 14A14 14 0 0016 2zm0 26a12 12 0 1112-12 12 12 0 01-12 12z" />
+                <path d="M15 8h2v11h-2zM15 21h2v3h-2z" />
+              </svg>
+              <span class="tile-label">Support Materials</span>
+            </div>
+            <div class="tile-body">Project-specific scaffolding that students use directly to complete
+              tasks, such as task instructions, milestone checklists, starter codes, required configuration files,
+              task-specific troubleshooting guidance, and diagrams that guide implementation decisions.</div>
+            <cds-tag type="purple" size="sm">STU2</cds-tag>
+          </cds-tile>
+
+          <cds-tile>
+            <div class="tile-heading">
+              <svg class="tile-icon" viewBox="0 0 32 32">
+                <path d="M15 10h2v10h-2z" />
+                <path d="M10 15h12v2H10z" />
+                <path d="M26 4H6a2 2 0 00-2 2v20a2 2 0 002 2h20a2 2 0 002-2V6a2 2 0 00-2-2zM6 26V6h20v20z" />
+              </svg>
+              <span class="tile-label">Laboratory Exercises</span>
+            </div>
+            <div class="tile-body">Targeted exercises that help students get started with the project and build
+              prerequisite knowledge and
+              prepare for project tasks, such as learning to use a programming or markup language, GitHub, a database
+              system, or a language framework.</div>
+            <cds-tag type="purple" size="sm">STU3</cds-tag>
+          </cds-tile>
+
+          <cds-tile>
+            <div class="tile-heading">
+              <svg class="tile-icon" viewBox="0 0 32 32">
+                <path
+                  d="M26 2H6a2 2 0 00-2 2v24a2 2 0 002 2h20a2 2 0 002-2V4a2 2 0 00-2-2zM6 4h20v8H6zm0 10h9v14H6zm11 14V14h9v14z" />
+              </svg>
+              <span class="tile-label">Reference Materials</span>
+            </div>
+            <div class="tile-body">Resources students consult as needed for background understanding, such
+              as official documentation for APIs, languages, and frameworks, protocol specifications, report templates,
+              example artifacts, and other supporting references.</div>
+            <cds-tag type="purple" size="sm">STU4</cds-tag>
           </cds-tile>
 
         </div>

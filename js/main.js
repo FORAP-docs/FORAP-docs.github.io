@@ -22,8 +22,8 @@ const ICONS = {
    -------------------------------------------------------------------------- */
 const PAGE_TABS = {
   packages: [
-    { id: 'student-panel', label: 'Student Support Package', icon: 'student' },
     { id: 'instructor-panel', label: 'Instructor Support Package', icon: 'instructor' },
+    { id: 'student-panel', label: 'Student Support Package', icon: 'student' },
     { id: 'assessment-panel', label: 'Assessment Package', icon: 'assessment' }
   ],
   steps: [
@@ -37,7 +37,7 @@ const PAGE_TABS = {
    State
    -------------------------------------------------------------------------- */
 let currentPage = 'overview';
-let currentSubTab = {};  // { packages: 'student-panel', steps: 'steps-1-4' }
+let currentSubTab = {};  // { packages: 'instructor-panel', steps: 'steps-1-4' }
 
 /* --------------------------------------------------------------------------
    Page Navigation — show/hide sections
@@ -469,15 +469,15 @@ function initTagReferences() {
     ATT3: 'Attribute 3: Scope / Duration',
     ATT4: 'Attribute 4: Technical Complexity',
     ATT5: 'Attribute 5: Codebase Context',
-    STU1: 'Student Support Package 1: Installation Guidelines',
-    STU2: 'Student Support Package 2: Support Materials',
-    STU3: 'Student Support Package 3: Laboratory Exercises',
-    STU4: 'Student Support Package 4: Reference Materials',
     INS1: 'Instructor Support Package 1: Adoption Guidelines',
     INS2: 'Instructor Support Package 2: Instructor Notes',
     INS3: 'Instructor Support Package 3: Implementation Sample',
     INS4: 'Instructor Support Package 4: Sample Solutions',
     INS5: 'Instructor Support Package 5: Sustainability Plan',
+    STU1: 'Student Support Package 1: Installation Guidelines',
+    STU2: 'Student Support Package 2: Support Materials',
+    STU3: 'Student Support Package 3: Laboratory Exercises',
+    STU4: 'Student Support Package 4: Reference Materials',
     ASM1: 'Assessment Package 1: Phased Milestones',
     ASM2: 'Assessment Package 2: Transfer-oriented Design Problems',
     ASM3: 'Assessment Package 3: Detailed Rubric'
