@@ -472,7 +472,7 @@ function initTagReferences() {
     ATT3: 'Attribute 3: Scope / Duration',
     ATT4: 'Attribute 4: Technical Complexity',
     ATT5: 'Attribute 5: Codebase Context',
-    INS1: 'Instructor Support Package 1: Adoption Guidelines',
+    INS1: 'Instructor Support Package 1: Project Overview',
     INS2: 'Instructor Support Package 2: Instructor Notes',
     INS3: 'Instructor Support Package 3: Reference Course',
     INS4: 'Instructor Support Package 4: Sample Solutions',
