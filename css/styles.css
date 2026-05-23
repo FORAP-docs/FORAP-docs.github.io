@@ -227,6 +227,17 @@ cds-header-menu-button {
   color: #ffffff !important;
 }
 
+@media (max-width: 1055px) {
+  cds-header-menu-button::part(button) {
+    width: 4rem;
+  }
+
+  cds-header-menu-button::part(toggle-icon) {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}
+
 /* --------------------------------------------------------------------------
    Contextual Top Tabs Bar (below header)
    -------------------------------------------------------------------------- */
@@ -330,13 +341,23 @@ cds-side-nav {
 }
 
 cds-side-nav-link {
-  font-size: var(--type-body-01);
+  font-size: 1rem;
   line-height: 1.2;
+}
+
+cds-side-nav-link::part(link) {
+  font-size: 1rem;
 }
 
 cds-side-nav-link[active] {
   font-weight: 600;
   background-color: var(--cds-layer-01);
+}
+
+.side-nav-divider {
+  height: 1px;
+  margin: var(--spacing-03) var(--spacing-05);
+  background-color: var(--cds-border-subtle);
 }
 
 /* Icon styling in side nav links */
@@ -1024,7 +1045,7 @@ cds-tag[type="gray"] {
 
 @media (min-width: 672px) {
   .overview-tiles {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
   }
 }
 
