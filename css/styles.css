@@ -1418,36 +1418,26 @@ cds-tag[type="gray"] {
 .portfolio-card__image {
   display: grid;
   place-items: center;
-  flex: 0 0 6rem;
-  width: 6rem;
-  min-height: 6rem;
+  flex: 0 0 6.5rem;
+  width: 6.5rem;
+  aspect-ratio: 1;
   margin: 0;
+  overflow: hidden;
+  background: var(--cds-background);
+  border: 1px solid var(--cds-border-subtle);
 }
 
-.portfolio-card__icon {
-  width: 5rem;
-  height: 5rem;
-  fill: var(--cds-interactive);
+.portfolio-card__image img {
+  display: block;
+  width: 4.25rem;
+  height: 4.25rem;
+  object-fit: contain;
 }
 
-.portfolio-card__image--security .portfolio-card__icon {
-  fill: var(--cds-support-error);
-}
-
-.portfolio-card__image--data .portfolio-card__icon {
-  fill: var(--cds-support-success);
-}
-
-.portfolio-card__image--web .portfolio-card__icon {
-  fill: var(--cds-tag-color-teal);
-}
-
-.portfolio-card__image--ai .portfolio-card__icon {
-  fill: var(--cds-tag-color-purple);
-}
-
-.portfolio-card__image--systems .portfolio-card__icon {
-  fill: var(--cds-text-secondary);
+.portfolio-card__image img.portfolio-card__logo {
+  width: 5.25rem;
+  height: auto;
+  max-height: 4.25rem;
 }
 
 .portfolio-card__body {
@@ -1496,18 +1486,20 @@ cds-tag[type="gray"] {
 }
 
 @media (max-width: 671px) {
-  .portfolio-card {
-    flex-direction: column;
-  }
-
   .portfolio-card__image {
-    width: 5.5rem;
-    min-height: 5.5rem;
+    width: 6rem;
+    flex-basis: 6rem;
   }
 
-  .portfolio-card__icon {
-    width: 4.75rem;
-    height: 4.75rem;
+  .portfolio-card__image img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .portfolio-card__image img.portfolio-card__logo {
+    width: 5rem;
+    height: auto;
+    max-height: 4rem;
   }
 }
 
