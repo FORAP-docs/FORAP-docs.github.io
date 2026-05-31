@@ -702,6 +702,15 @@ cds-side-nav-menu-item::part(link) {
   margin-bottom: var(--spacing-05);
 }
 
+.tile-grid cds-tile .tile-heading--with-tag {
+  flex-wrap: wrap;
+}
+
+.tile-grid cds-tile .tile-heading--with-tag cds-tag {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
 .bottom-right-tag {
   margin-top: auto;
   align-self: flex-end;
