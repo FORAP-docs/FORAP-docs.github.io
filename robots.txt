@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://forap-docs.github.io/sitemap.xml
