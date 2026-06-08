@@ -1052,6 +1052,56 @@ cds-tag[type="gray"] {
 /* --------------------------------------------------------------------------
    overview "What FORAP is / is not" tiles - side by side, icons per line
    -------------------------------------------------------------------------- */
+.overview-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--spacing-07);
+  align-items: start;
+}
+
+.overview-intro .section-description {
+  margin-bottom: 0;
+}
+
+.overview-architecture {
+  margin: 0;
+}
+
+.overview-architecture img {
+  display: block;
+  width: 100%;
+  max-width: 34rem;
+  height: auto;
+  background: var(--cds-layer-01);
+  border: 1px solid var(--cds-border-subtle);
+  border-radius: 6px;
+}
+
+.overview-architecture figcaption {
+  margin-top: var(--spacing-03);
+  color: var(--cds-text-helper);
+  font-size: var(--type-body-compact-01);
+  line-height: 1.4;
+}
+
+@media (min-width: 672px) {
+  .overview-intro {
+    grid-template-columns: minmax(18rem, 1fr) minmax(20rem, 0.72fr);
+    gap: var(--spacing-06);
+  }
+
+  .overview-architecture {
+    justify-self: end;
+  }
+}
+
+@media (min-width: 1056px) {
+  .overview-intro {
+    grid-template-columns: minmax(0, 1fr) minmax(22rem, 0.72fr);
+    gap: var(--spacing-07);
+  }
+}
+
 .overview-tiles {
   display: grid;
   grid-template-columns: 1fr;

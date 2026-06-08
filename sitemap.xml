@@ -1,39 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://forap-docs.github.io/</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-08</lastmod>
+    <image:image>
+      <image:loc>https://forap-docs.github.io/assets/forap-architecture-overview.png</image:loc>
+      <image:title>FORAP architecture overview</image:title>
+      <image:caption>FORAP architecture diagram showing guiding principles, support packages, project attributes, and project portfolio.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://forap-docs.github.io/purpose.html</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-08</lastmod>
   </url>
   <url>
     <loc>https://forap-docs.github.io/principles.html</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-08</lastmod>
   </url>
   <url>
     <loc>https://forap-docs.github.io/attributes.html</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-08</lastmod>
   </url>
   <url>
     <loc>https://forap-docs.github.io/architecture.html</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-08</lastmod>
   </url>
   <url>
     <loc>https://forap-docs.github.io/support.html</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-08</lastmod>
   </url>
   <url>
     <loc>https://forap-docs.github.io/steps.html</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-08</lastmod>
   </url>
   <url>
     <loc>https://forap-docs.github.io/example.html</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-08</lastmod>
   </url>
   <url>
     <loc>https://forap-docs.github.io/portfolio.html</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-08</lastmod>
   </url>
 </urlset>
