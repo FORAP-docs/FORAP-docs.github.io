@@ -1031,10 +1031,14 @@ cds-tag[type="gray"] {
   overflow: hidden;
 }
 
+.purpose-article-card__image picture,
 .purpose-article-card__image img {
   display: block;
   width: 100%;
   height: 100%;
+}
+
+.purpose-article-card__image img {
   object-fit: cover;
 }
 
@@ -1914,14 +1918,16 @@ cds-accordion-item::part(title) {
 
 .site-footer__link {
   color: #f4f4f4;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
   transition: color 0.15s;
 }
 
 .site-footer__link:hover,
 .site-footer__link:focus-visible {
   color: #78a9ff;
-  text-decoration: none;
+  text-decoration-thickness: 2px;
 }
 
 .site-footer__list--muted li {

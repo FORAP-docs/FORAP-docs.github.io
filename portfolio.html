@@ -41,28 +41,20 @@
   <!-- IBM Plex Sans Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://1.www.s81c.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet"></noscript>
 
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="css/styles.css?v=41">
+  <link rel="stylesheet" href="css/styles.css?v=45">
 
   <!-- ====================================================================
        Carbon Design System - Web Components v2 (IBM Official CDN)
        ==================================================================== -->
   <script type="module"
     src="https://1.www.s81c.com/common/carbon/web-components/tag/v2/latest/ui-shell.min.js"></script>
-  <script type="module"
-    src="https://1.www.s81c.com/common/carbon/web-components/tag/v2/latest/accordion.min.js"></script>
-  <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/tag/v2/latest/tabs.min.js"></script>
-  <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/tag/v2/latest/tile.min.js"></script>
-  <script type="module"
-    src="https://1.www.s81c.com/common/carbon/web-components/tag/v2/latest/structured-list.min.js"></script>
   <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/tag/v2/latest/tag.min.js"></script>
-  <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/tag/v2/latest/button.min.js"></script>
-  <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/tag/v2/latest/list.min.js"></script>
-  <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/tag/v2/latest/tooltip.min.js"></script>
 </head>
 
 <body>
@@ -103,7 +95,7 @@
         </svg>
         Architecture
       </cds-side-nav-link>
-      <div class="side-nav-divider" role="separator"></div>
+      <div class="side-nav-divider" aria-hidden="true"></div>
       <cds-side-nav-link href="principles.html" data-page="principles">
         <svg class="nav-icon" viewBox="0 0 32 32">
           <path d="M16 2a14 14 0 1014 14A14 14 0 0016 2zm0 26a12 12 0 1112-12 12 12 0 01-12 12z" />
@@ -123,7 +115,7 @@
         </svg>
         Attributes
       </cds-side-nav-link>
-      <div class="side-nav-divider" role="separator"></div>
+      <div class="side-nav-divider" aria-hidden="true"></div>
       <cds-side-nav-link href="example.html" data-page="example">
         <svg class="nav-icon" viewBox="0 0 32 32">
           <path d="M16 2a14 14 0 1014 14A14 14 0 0016 2zm0 26a12 12 0 1112-12 12 12 0 01-12 12z" />
@@ -464,7 +456,7 @@
     </div>
 
     <figure class="portfolio-status__media">
-      <img src="assets/portfolio-preview.gif?v=1" alt="Animated preview of portfolio search by FORAP project attributes">
+      <img src="assets/portfolio-preview.gif?v=1" width="960" height="540" loading="lazy" decoding="async" alt="Animated preview of portfolio search by FORAP project attributes">
       <figcaption>Preview: Searching for projects by FORAP attributes.</figcaption>
     </figure>
   </div>
