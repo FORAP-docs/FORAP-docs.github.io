@@ -1008,6 +1008,40 @@ cds-tag[type="gray"] {
   margin-bottom: var(--spacing-02);
 }
 
+.example-materials-note {
+  margin-top: var(--spacing-05);
+  font-size: var(--type-body-compact-01);
+  color: var(--cds-text-secondary);
+}
+
+.page-hero .example-materials-note {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.tile-material-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-03);
+  width: fit-content;
+  margin-top: var(--spacing-02);
+  color: var(--cds-link-primary);
+  font-size: var(--type-body-compact-01);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.tile-material-link:hover {
+  color: var(--cds-link-primary-hover);
+  text-decoration: underline;
+}
+
+.tile-material-link svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  flex: 0 0 auto;
+}
+
 .purpose-article-card {
   display: block;
   --cds-tile-padding: 0;

@@ -82,7 +82,7 @@ const TAG_TITLES = {
   STU1: 'Student Support Package 1: Installation Guidelines',
   STU2: 'Student Support Package 2: Task Scaffolding',
   STU3: 'Student Support Package 3: Laboratory Exercises',
-  STU4: 'Student Support Package 4: Reference Materials',
+  STU4: 'Student Support Package 4: Resources',
   ASM1: 'Assessment Package 1: Phased Milestones',
   ASM2: 'Assessment Package 2: Transfer-oriented Design Problems',
   ASM3: 'Assessment Package 3: Detailed Rubric'
