@@ -244,11 +244,13 @@ cds-header-menu-button {
 .top-tabs-bar {
   display: none;
   width: 100%;
-  border-bottom: 1px solid #393939;
+  border-top: 1px solid var(--cds-border-subtle);
+  border-bottom: 1px solid var(--cds-border-tile);
   position: sticky;
   top: var(--header-height);
   z-index: 2;
-  background-color: var(--cds-background-inverse);
+  background-color: var(--cds-layer-01);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
 }
 
 .top-tabs-bar.active {
@@ -271,17 +273,21 @@ cds-header-menu-button {
 .top-tabs-bar .top-tab {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+  flex: 1 1 0;
+  min-width: 0;
   height: 100%;
   padding: 0 var(--spacing-05);
-  color: #c6c6c6;
+  color: var(--cds-text-secondary);
   font-size: var(--type-body-compact-01);
   font-weight: 400;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
+  border-bottom: 3px solid transparent;
   cursor: pointer;
-  transition: color 0.15s, border-color 0.15s;
+  transition: color 0.15s, background-color 0.15s, border-color 0.15s;
   white-space: nowrap;
-  background: none;
+  overflow: hidden;
+  background-color: transparent;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -292,24 +298,35 @@ cds-header-menu-button {
 }
 
 .top-tabs-bar .top-tab:hover {
-  color: #ffffff;
-  background-color: #353535;
+  color: var(--cds-text-primary);
+  background-color: #e8e8e8;
 }
 
 .top-tabs-bar .top-tab.active {
-  color: #ffffff;
-  border-bottom-color: #0f62fe;
+  color: var(--cds-text-primary);
+  background-color: #edf5ff;
+  border-bottom-color: var(--cds-interactive);
   font-weight: 600;
 }
 
+.top-tabs-bar .top-tab:focus-visible {
+  outline: 2px solid var(--cds-focus);
+  outline-offset: -2px;
+  z-index: 1;
+}
+
 .top-tabs-bar .top-tab .tab-icon {
-  width: 16px;
-  height: 16px;
+  width: 1.125rem;
+  height: 1.125rem;
   fill: currentColor;
 }
 
 .top-tabs-bar .top-tab .tab-label--full {
-  display: inline;
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .top-tabs-bar .top-tab .tab-label--mobile {
@@ -317,6 +334,11 @@ cds-header-menu-button {
 }
 
 @media (max-width: 671px) {
+  .top-tabs-bar .top-tab {
+    flex: 0 0 auto;
+    min-width: max-content;
+  }
+
   .top-tabs-bar .top-tab .tab-label--full {
     display: none !important;
   }
@@ -1870,6 +1892,7 @@ cds-accordion-item::part(title) {
 
   .top-tabs-bar .top-tab.active {
     color: var(--cds-text-primary);
+    background: none;
     border-bottom-color: var(--cds-interactive);
   }
 

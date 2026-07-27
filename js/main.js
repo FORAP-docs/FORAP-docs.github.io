@@ -32,7 +32,7 @@ const PAGE_SEQUENCE = [
   { id: 'principles', title: 'Guiding Principles' },
   { id: 'packages', title: 'Support Packages' },
   { id: 'attributes', title: 'Attributes' },
-  { id: 'steps', title: 'Packaging Steps' },
+  { id: 'steps', title: 'Applying FORAP' },
   { id: 'example', title: 'Illustrative Example' },
   { id: 'portfolio', title: 'Project Portfolio' }
 ];
@@ -44,9 +44,9 @@ const PAGE_TABS = {
     { id: 'assessment-panel', slug: 'assessment', label: 'Assessment Package', mobileLabel: 'Assessment', icon: 'assessment' }
   ],
   steps: [
-    { id: 'steps-1-4', slug: '1-4', label: 'Steps 1-4: Foundation & Design', mobileLabel: 'Steps 1-4', icon: 'steps-1-4' },
-    { id: 'steps-5-7', slug: '5-7', label: 'Steps 5-7: Support Package Creation', mobileLabel: 'Steps 5-7', icon: 'steps-5-7' },
-    { id: 'steps-8-10', slug: '8-10', label: 'Steps 8-10: Review & Refine', mobileLabel: 'Steps 8-10', icon: 'steps-8-10' }
+    { id: 'steps-1-4', slug: '1-4', label: 'Steps 1-4: Define and Design', mobileLabel: 'Steps 1-4', icon: 'steps-1-4' },
+    { id: 'steps-5-7', slug: '5-7', label: 'Steps 5-7: Build Support and Assessment', mobileLabel: 'Steps 5-7', icon: 'steps-5-7' },
+    { id: 'steps-8-10', slug: '8-10', label: 'Steps 8-10: Review, Pilot, and Maintain', mobileLabel: 'Steps 8-10', icon: 'steps-8-10' }
   ]
 };
 
@@ -139,7 +139,7 @@ function initTopTabs(pageId) {
   innerWrapper.innerHTML = tabs.map(tab => {
     const iconHtml = ICONS[tab.icon] ? `<span class="tab-icon" style="display:inline-flex;align-items:center;margin-right:0.5rem;opacity:0.9">${ICONS[tab.icon]}</span>` : '';
     const labelHtml = `<span class="tab-label tab-label--full">${tab.label}</span><span class="tab-label tab-label--mobile">${tab.mobileLabel || tab.label}</span>`;
-    return `<button class="top-tab" data-tab="${tab.id}" data-slug="${tab.slug}" role="tab" aria-selected="false" aria-label="${tab.label}">${iconHtml}${labelHtml}</button>`;
+    return `<button class="top-tab" data-tab="${tab.id}" data-slug="${tab.slug}" role="tab" aria-selected="false" aria-label="${tab.label}" title="${tab.label}">${iconHtml}${labelHtml}</button>`;
   }).join('');
 
   topBar.appendChild(innerWrapper);

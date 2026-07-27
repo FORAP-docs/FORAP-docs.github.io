@@ -8,7 +8,7 @@ The site brings together the main parts of the framework, including:
 - the purpose of the framework
 - the architecture and guiding principles
 - support packages and project attributes
-- the packaging steps
+- guidance for applying the framework
 - an illustrative OAuth project example
 
 ## Technology
