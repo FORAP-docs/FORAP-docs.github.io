@@ -47,14 +47,13 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet"></noscript>
 
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="css/styles.css?v=52">
+  <link rel="stylesheet" href="css/styles.min.css?v=53">
 
   <!-- ====================================================================
        Carbon Design System - Web Components v2 (IBM Official CDN)
        ==================================================================== -->
   <script type="module"
     src="https://1.www.s81c.com/common/carbon/web-components/tag/v2/latest/ui-shell.min.js"></script>
-  <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/tag/v2/latest/tile.min.js"></script>
 </head>
 
 <body>
@@ -174,11 +173,16 @@
       </p>
 
       <figure class="overview-architecture" aria-labelledby="overview-architecture-title">
-        <img src="assets/forap-architecture-overview.png"
-          srcset="assets/forap-architecture-overview-600.png 600w, assets/forap-architecture-overview-900.png 900w, assets/forap-architecture-overview.png 1200w"
-          sizes="(min-width: 1056px) 34rem, (min-width: 672px) 34vw, 100vw" width="1200" height="630"
-          decoding="async" fetchpriority="high"
-          alt="FORAP architecture diagram showing guiding principles, support packages, project attributes, and project portfolio">
+        <picture>
+          <source type="image/webp"
+            srcset="assets/forap-architecture-overview-600.webp 600w, assets/forap-architecture-overview-900.webp 900w, assets/forap-architecture-overview.webp 1200w"
+            sizes="(min-width: 1056px) 34rem, (min-width: 672px) 34vw, calc(100vw - 2rem)">
+          <img src="assets/forap-architecture-overview.png"
+            srcset="assets/forap-architecture-overview-600.png 600w, assets/forap-architecture-overview-900.png 900w, assets/forap-architecture-overview.png 1200w"
+            sizes="(min-width: 1056px) 34rem, (min-width: 672px) 34vw, calc(100vw - 2rem)" width="1200" height="630"
+            decoding="async" fetchpriority="high"
+            alt="FORAP architecture diagram showing guiding principles, support packages, project attributes, and project portfolio">
+        </picture>
         <figcaption id="overview-architecture-title">FORAP architecture</figcaption>
       </figure>
     </div>
@@ -192,7 +196,7 @@
           controls
           playsinline
           preload="metadata"
-          poster="assets/forap-overview-video-poster-v2.png"
+          poster="assets/forap-overview-video-poster.webp"
           aria-label="FORAP overview video">
           <source src="assets/forap-overview-video.mp4" type="video/mp4">
           <track kind="captions" src="assets/forap-overview-video-en.vtt" srclang="en" label="English" default>
@@ -203,7 +207,7 @@
 
     <!-- What FORAP is / What FORAP is not - side by side with icons -->
     <div class="overview-tiles">
-      <cds-tile class="tile--is">
+      <article class="overview-tile tile--is">
         <div class="tile-heading">
           <svg class="heading-icon" viewBox="0 0 16 16" fill="currentColor">
             <path
@@ -241,8 +245,8 @@
             A PjBL project structure with coordinated support and assessment
           </li>
         </ul>
-      </cds-tile>
-      <cds-tile class="tile--isnot">
+      </article>
+      <article class="overview-tile tile--isnot">
         <div class="tile-heading">
           <svg class="heading-icon" viewBox="0 0 16 16" fill="currentColor">
             <path
@@ -273,7 +277,7 @@
             Not a PjBL process framework
           </li>
         </ul>
-      </cds-tile>
+      </article>
     </div>
   </div>
 </section>

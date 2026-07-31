@@ -1210,7 +1210,7 @@ cds-tag[type="gray"] {
   }
 }
 
-.overview-tiles cds-tile {
+.overview-tile {
   display: block;
   background-color: var(--cds-layer-01);
   border: none;

@@ -20,6 +20,14 @@ This website is built as a static site using:
 - JavaScript
 - [Carbon Design System Web Components v2](https://carbondesignsystem.com/)
 
+## Production CSS
+
+The HTML pages load `css/styles.min.css`. After editing `css/styles.css`, regenerate the production stylesheet with:
+
+```sh
+npx --yes clean-css-cli@5.6.3 -o css/styles.min.css css/styles.css
+```
+
 ## Overview
 
 FORAP is designed to support the organization, reuse, and adaptation of computing project-based learning projects. This website serves as the public presentation of the framework and its core components.
