@@ -1,1 +1,18 @@
 .DS_Store
+
+# Local manuscript and analysis workspaces
+/Expert Evlaution/
+/analysis_app/
+/forap-evaluation-analysis/
+/forap-evaluation-analysis.zip
+
+# Generated documents, exports, and temporary files
+/deliverables/
+/output/
+/outputs/
+/tmp/
+
+# Local agent instructions and build artifacts
+/AGENTS.md
+/.codex-build/
+/.codex-finalizer/
