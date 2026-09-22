@@ -43,10 +43,6 @@ npx --yes clean-css-cli@5.6.3 -o css/styles.min.css css/styles.css
 
 Update the stylesheet version in the affected HTML links when publishing CSS changes. Check navigation, tabs, images, and the mobile layout before submitting a change. GitHub Pages serves the public website from this repository.
 
-## Evaluation analysis software
-
-The separate [FORAP Evaluation Analysis repository](https://github.com/FORAP-docs/forap-evaluation-analysis) provides the local analysis application, installation instructions, synthetic example responses, and a blank input template. It does not include participant responses or the study's coding database.
-
 ## Feedback
 
 Use [GitHub Issues](https://github.com/FORAP-docs/FORAP-docs.github.io/issues) to report documentation errors or suggest improvements. Include the relevant page and a brief description. Research contacts are listed in the website footer.
