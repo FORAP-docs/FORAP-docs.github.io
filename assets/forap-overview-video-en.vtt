@@ -1,0 +1,638 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.480 --> 00:00:08.480
+Welcome and thank you for taking the
+time to review FORAP. FORAP stands for
+
+00:00:06.000 --> 00:00:12.800
+framework for organizing reusable and
+adaptable project-based learning
+
+00:00:10.320 --> 00:00:16.880
+projects. It is designed specifically
+for computing education where
+
+00:00:14.639 --> 00:00:22.080
+project-based learning can be powerful,
+but where projects can also be difficult
+
+00:00:18.880 --> 00:00:26.800
+to design, adopt, adapt, and implement
+across different course contexts. The
+
+00:00:24.880 --> 00:00:30.400
+purpose of this short presentation is to
+give you a guided overview of the
+
+00:00:28.480 --> 00:00:34.320
+framework before you review the full
+website and complete the questionnaire.
+
+00:00:32.640 --> 00:00:38.160
+The website is the main reference
+material. This presentation is only an
+
+00:00:36.559 --> 00:00:43.200
+entry point to help explain the
+motivation and structure of the framework
+
+00:00:40.239 --> 00:00:48.719
+and how its parts fit together.
+Before looking at FORAP itself, it is useful
+
+00:00:46.160 --> 00:00:53.120
+to briefly situate it in project-based
+learning in computing.
+
+00:00:50.879 --> 00:00:57.680
+In computing courses, project-based
+learning often asks students to work
+
+00:00:55.120 --> 00:01:02.800
+through realistic and meaningful project
+tasks. Depending on the project,
+
+00:01:00.160 --> 00:01:08.720
+students may need to plan, research,
+design, implement, test, debug,
+
+00:01:06.320 --> 00:01:13.040
+document, deploy, and present their
+work. They may also need to collaborate
+
+00:01:11.119 --> 00:01:17.920
+with teammates, make technical
+decisions, work through ambiguity, and
+
+00:01:15.680 --> 00:01:22.880
+connect course concepts to a larger
+computing problem.
+
+00:01:20.320 --> 00:01:28.479
+FORAP does not try to define all of
+project-based learning. Instead, it
+
+00:01:25.439 --> 00:01:33.119
+focuses on how computing PjBL projects
+can be organized and packaged so that
+
+00:01:30.799 --> 00:01:38.320
+they can be reused and adapted by other
+instructors across different courses and
+
+00:01:35.280 --> 00:01:43.920
+instructional contexts. FORAP is
+motivated by three recurring imperatives
+
+00:01:41.119 --> 00:01:49.040
+in computing project-based learning. The
+first is the instructor imperative.
+
+00:01:46.799 --> 00:01:53.840
+Instructors often face substantial
+workload when they design a new project,
+
+00:01:51.280 --> 00:01:58.079
+adopt an existing project, adapt that
+project to a local course context,
+
+00:01:56.079 --> 00:02:03.759
+implement it during the semester, and
+sustain the materials over time. The
+
+00:02:01.200 --> 00:02:07.360
+second is the student imperative.
+Computing projects often involve
+
+00:02:05.520 --> 00:02:11.840
+technical barriers that can prevent
+students from making progress. These
+
+00:02:09.759 --> 00:02:15.840
+barriers can include installation and
+configuration problems, gaps in
+
+00:02:13.920 --> 00:02:20.800
+prerequisite knowledge, debugging
+difficulties, testing, deployment,
+
+00:02:18.400 --> 00:02:24.879
+version control, documentation, and
+other practical challenges that arise
+
+00:02:22.720 --> 00:02:29.360
+during project work.
+The third is the assessment imperative.
+
+00:02:27.520 --> 00:02:33.680
+In project-based learning, it can be
+difficult to assess higher-order
+
+00:02:31.040 --> 00:02:37.760
+thinking, formative progress, individual
+contribution in collaborative settings
+
+00:02:35.680 --> 00:02:42.959
+and what students have actually learned
+beyond the final project artifact.
+
+00:02:40.800 --> 00:02:46.720
+FORAP is intended to respond to these
+imperatives by organizing project
+
+00:02:44.720 --> 00:02:53.519
+materials in a more coordinated and
+adoption-ready way. So what is FORAP?
+
+00:02:51.280 --> 00:02:58.319
+FORAP is a packaging framework for
+computing PjBL projects. It is a way to
+
+00:02:56.480 --> 00:03:03.920
+organize a project so that another
+instructor can understand it, judge its
+
+00:03:00.720 --> 00:03:08.959
+fit, adopt it, and adapt it. The
+framework includes principles, project
+
+00:03:06.239 --> 00:03:13.120
+design goals, and structural components.
+Together, these help define what should
+
+00:03:10.959 --> 00:03:19.360
+be included in a reusable project
+package. It is also important to say
+
+00:03:15.840 --> 00:03:25.680
+what FORAP is not. FORAP is not a single
+project. It is not a full curriculum. It
+
+00:03:22.239 --> 00:03:30.239
+is not a general PjBL process framework.
+It is focused on computing PjBL projects
+
+00:03:28.560 --> 00:03:34.799
+and on how those projects can be
+packaged with coordinated support and
+
+00:03:32.319 --> 00:03:39.360
+assessment materials. The architecture
+of FORAP gives the framework its
+
+00:03:36.959 --> 00:03:44.799
+overall structure. At the top are the
+guiding principles. These include two
+
+00:03:41.920 --> 00:03:48.959
+groups, the PjBL principles and the
+design goals. The principles describe
+
+00:03:47.280 --> 00:03:52.959
+the pedagogical direction of the
+framework while the design goals
+
+00:03:50.959 --> 00:03:57.840
+translate the needs of instructors and
+students into practical directions for
+
+00:03:55.040 --> 00:04:02.720
+organizing projects. The middle of the
+architecture is the set of support
+
+00:03:59.599 --> 00:04:07.200
+packages. FORAP organizes each project
+through three complementary packages. An
+
+00:04:05.200 --> 00:04:12.239
+instructor support package, a student
+support package, and an assessment
+
+00:04:09.120 --> 00:04:17.040
+package. The PjBL principles and design
+goals motivate and guide how these
+
+00:04:14.400 --> 00:04:20.959
+support packages are organized. The
+architecture also includes project
+
+00:04:18.880 --> 00:04:25.600
+attributes which help describe the
+nature and fit of a project and a
+
+00:04:23.360 --> 00:04:30.720
+project portfolio which is intended to
+support discovery and sharing of fully
+
+00:04:28.080 --> 00:04:35.520
+packaged FORAP projects. The project
+attributes provide the representation of
+
+00:04:32.800 --> 00:04:39.840
+each project within the portfolio.
+The next slides walk through these parts
+
+00:04:37.199 --> 00:04:44.320
+of the architecture in order. The first
+major part of the architecture is the
+
+00:04:42.000 --> 00:04:49.919
+guiding principles. The guiding
+principles include two groups. The first
+
+00:04:46.960 --> 00:04:53.919
+group is the PjBL principles. These are
+principles of project-based learning
+
+00:04:51.759 --> 00:04:59.440
+that are especially relevant to project
+design in computing.
+
+00:04:56.560 --> 00:05:03.919
+The five PjBL principles are authentic
+learning, active learning, self-directed
+
+00:05:01.919 --> 00:05:08.800
+learning, collaborative learning, and
+critical thinking. In FORAP, authentic
+
+00:05:07.199 --> 00:05:13.120
+learning means that projects should
+connect learning to realistic and
+
+00:05:10.639 --> 00:05:17.919
+relevant contexts. Active and
+self-directed learning emphasize student
+
+00:05:15.199 --> 00:05:23.120
+engagement in project tasks, planning,
+research, decision-making, and working through
+
+00:05:20.479 --> 00:05:27.039
+ambiguity with appropriate support.
+Collaborative learning emphasizes
+
+00:05:24.880 --> 00:05:31.520
+teamwork, communication, and shared
+responsibility. As for the support
+
+00:05:29.360 --> 00:05:36.160
+packages, the first one is the
+instructor support package. This package
+
+00:05:34.320 --> 00:05:41.919
+includes the materials an instructor
+needs in order to adopt, implement, and
+
+00:05:38.960 --> 00:05:47.039
+adapt a project with less effort. It is
+intended to reduce barriers related to
+
+00:05:44.160 --> 00:05:51.280
+time, planning, organization, and
+student support.
+
+00:05:49.039 --> 00:05:55.440
+The project overview explains what the
+project is for and summarizes its
+
+00:05:53.520 --> 00:06:00.479
+learning objectives, prerequisites,
+knowledge, nature of tasks, and key
+
+00:05:58.080 --> 00:06:05.919
+project attributes. It also provides
+adoption and adaptation guidance.
+
+00:06:04.000 --> 00:06:10.160
+Instructor notes document practical
+implementation knowledge. This can
+
+00:06:08.080 --> 00:06:14.800
+include teaching notes, common student
+difficulties, points where students
+
+00:06:12.160 --> 00:06:18.560
+usually need help, timing suggestions,
+and what needs updates as technologies
+
+00:06:16.960 --> 00:06:22.800
+change.
+The package can also include a reference
+
+00:06:20.639 --> 00:06:28.319
+course, which shows how the project has
+been integrated into a syllabus, course
+
+00:06:24.960 --> 00:06:32.479
+schedule, and assessment plan.
+The package also includes sample task
+
+00:06:30.560 --> 00:06:37.199
+solutions that support instructor
+preparation, demonstration, and
+
+00:06:34.479 --> 00:06:41.840
+evaluation. The second support package
+is the student support package. This
+
+00:06:39.919 --> 00:06:45.919
+package contains the materials students
+use to make progress during the project.
+
+00:06:44.240 --> 00:06:50.400
+It is designed to address common
+technical challenges, especially
+
+00:06:47.919 --> 00:06:54.160
+installation and configuration issues,
+prerequisite gaps, and difficulties
+
+00:06:52.479 --> 00:06:58.720
+students encounter while completing
+project tasks. The package includes
+
+00:06:56.720 --> 00:07:03.120
+installation guidelines, which may include
+written or video guides, or tools that help
+
+00:07:01.280 --> 00:07:07.759
+students set up required tools and
+environments. It includes task
+
+00:07:05.280 --> 00:07:13.039
+scaffolding such as task instructions,
+milestone checklists, starter code,
+
+00:07:10.240 --> 00:07:17.360
+configuration files, hints, diagrams,
+and templates. It includes laboratory
+
+00:07:15.599 --> 00:07:22.000
+exercises that help students fill
+prerequisite knowledge gaps or practice
+
+00:07:19.599 --> 00:07:26.160
+required tools. It also includes
+resources such as lecture slides,
+
+00:07:24.080 --> 00:07:29.840
+official documentation, protocol
+specifications, or other supporting
+
+00:07:28.160 --> 00:07:34.880
+references students may need during
+the project. The main purpose is to
+
+00:07:32.560 --> 00:07:38.960
+reduce avoidable technical barriers and
+help students continue making progress
+
+00:07:36.639 --> 00:07:43.919
+through the project. The third support
+package is the assessment package. This
+
+00:07:41.919 --> 00:07:49.120
+package includes materials used to
+support both formative and summative
+
+00:07:46.160 --> 00:07:53.199
+assessment in a FORAP project. It is
+organized around the project's learning
+
+00:07:50.880 --> 00:07:58.080
+objectives so that assessment remains
+connected to what students are expected
+
+00:07:55.120 --> 00:08:02.639
+to know and be able to do.
+Phased milestones define intermediate
+
+00:08:00.639 --> 00:08:07.599
+deliverables and feedback points during
+project execution. These milestones help
+
+00:08:05.520 --> 00:08:12.879
+make student progress visible while the
+project is still unfolding.
+
+00:08:10.479 --> 00:08:16.800
+Transfer-oriented design problems are
+scenario-based problems that assess
+
+00:08:14.879 --> 00:08:21.599
+learning beyond the original project
+tasks. They are intended to elicit
+
+00:08:19.280 --> 00:08:25.360
+higher-order thinking and can be used in
+exams, presentations, or project
+
+00:08:23.840 --> 00:08:29.840
+reviews.
+The detailed rubric provides criteria
+
+00:08:27.840 --> 00:08:34.560
+aligned with the learning objectives for
+evaluating project artifacts such as
+
+00:08:32.080 --> 00:08:38.399
+code, design documents, reports, and
+presentations.
+
+00:08:36.399 --> 00:08:42.479
+Together, these assessment materials
+help connect the project work to
+
+00:08:40.080 --> 00:08:47.200
+evidence of learning. In addition to the
+support packages, FORAP describes each
+
+00:08:45.279 --> 00:08:52.480
+project through a set of project
+attributes. These attributes act as a
+
+00:08:50.000 --> 00:08:57.120
+concise project profile. They help
+instructors understand the nature of the
+
+00:08:54.480 --> 00:09:02.560
+project, compare it with other projects,
+judge whether it fits a course, and
+
+00:08:59.279 --> 00:09:06.560
+identify where adaptation may be needed.
+The first describes whether the project
+
+00:09:04.560 --> 00:09:11.680
+is a greenfield project built from
+scratch or a brownfield project that
+
+00:09:08.880 --> 00:09:15.600
+modifies an existing system.
+The second attribute is scope and
+
+00:09:13.600 --> 00:09:20.480
+duration which describes the time
+required for completion.
+
+00:09:18.000 --> 00:09:24.399
+The third is technical complexity which
+describes the expected level of
+
+00:09:22.080 --> 00:09:28.080
+difficulty in terms of technical depth,
+integration effort and implementation
+
+00:09:26.399 --> 00:09:32.000
+demands.
+The fourth attribute is domain or
+
+00:09:30.160 --> 00:09:36.080
+discipline. This identifies the
+computing area or subject context of the
+
+00:09:34.480 --> 00:09:40.399
+project.
+The fifth attribute is competency
+
+00:09:38.080 --> 00:09:44.560
+specification which is optional. When
+included, it makes the project's
+
+00:09:42.080 --> 00:09:48.480
+learning objectives explicit. It can be
+written in a clear, structured, and
+
+00:09:46.480 --> 00:09:53.040
+comparable format such as through the
+competency model of CC2020.
+
+00:09:51.120 --> 00:09:58.080
+An illustrative example is the
+Touchalytics project. In this project,
+
+00:09:55.839 --> 00:10:03.040
+students build an Android authentication
+application that uses swipe behavior as
+
+00:10:00.320 --> 00:10:06.959
+a biometric signal. The project involves
+storing interaction data in cloud
+
+00:10:04.880 --> 00:10:11.600
+storage and processing that data with a
+Python-based machine learning backend.
+
+00:10:09.600 --> 00:10:16.320
+The example shows how a project can be
+described using the FORAP attributes.
+
+00:10:14.240 --> 00:10:21.360
+The codebase context is a greenfield
+mobile application project. The scope is
+
+00:10:18.959 --> 00:10:25.760
+medium to large, typically 6 to 8 weeks
+with staged milestones. The technical
+
+00:10:23.839 --> 00:10:30.079
+complexity is high because the project
+involves mobile development, behavioral
+
+00:10:27.839 --> 00:10:34.000
+data capture, cloud storage, and machine
+learning-based authentication. The
+
+00:10:32.240 --> 00:10:38.160
+domain includes mobile computing,
+behavioral biometrics, and machine
+
+00:10:35.839 --> 00:10:41.600
+learning. The competency statement is to
+design a mobile behavioral-authentication
+
+00:10:39.600 --> 00:10:46.240
+application that captures and stores
+swipe interactions and applies machine
+
+00:10:43.519 --> 00:10:50.160
+learning. The example also shows how the
+support packages can be applied. Student
+
+00:10:48.480 --> 00:10:54.959
+materials include setup guidance for
+Python, Android Studio, Firebase, and
+
+00:10:52.720 --> 00:10:58.399
+machine learning libraries. Instructor
+materials include adoption guidance,
+
+00:10:56.720 --> 00:11:02.160
+deployment notes, implementation
+samples, and sample solutions.
+
+00:11:00.399 --> 00:11:06.640
+Assessment materials include staged
+milestones, rubrics, and transfer-oriented
+
+00:11:04.079 --> 00:11:10.800
+design problems. The project
+portfolio is intended to become a
+
+00:11:08.800 --> 00:11:16.720
+centralized place where computing
+instructors can find, compare, and share
+
+00:11:13.920 --> 00:11:21.040
+FORAP-based projects. The website
+currently shows a collection of packaged
+
+00:11:18.800 --> 00:11:25.279
+projects in the portfolio. These
+projects represent different computing
+
+00:11:22.800 --> 00:11:28.959
+areas, greenfield and brownfield
+contexts, difficulty levels, and
+
+00:11:27.360 --> 00:11:33.600
+durations.
+The longer-term direction is to turn this
+
+00:11:31.200 --> 00:11:38.320
+collection into a public platform where
+instructors can share packaged projects,
+
+00:11:36.000 --> 00:11:44.079
+find projects from others, and search or
+filter by FORAP attributes. This
+
+00:11:41.040 --> 00:11:47.839
+concludes the brief overview of FORAP.
+Please use the FORAP website as the
+
+00:11:46.240 --> 00:11:51.839
+reference material for the full
+framework details.
+
+00:11:49.839 --> 00:11:56.480
+As a next step, we would like to
+validate the framework by collecting
+
+00:11:53.680 --> 00:12:00.160
+feedback from reviewers. After reviewing
+the material, please complete the
+
+00:11:58.480 --> 00:12:05.440
+questionnaire which is intended to
+collect feedback on the clarity,
+
+00:12:02.160 --> 00:12:10.399
+completeness, and usefulness of FORAP.
+Thank you again for reviewing the
+
+00:12:06.959 --> 00:12:10.399
+framework and providing your feedback.

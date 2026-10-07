@@ -17,6 +17,6 @@ It does not apply to website implementation code, third-party quotations, images
 
 Credit FORAP contributors, provide a link to the source material and this license, and indicate whether you changed the material. For example:
 
-> Adapted from the FORAP documentation by FORAP contributors, [original website URL withheld for review], licensed under CC BY 4.0, https://creativecommons.org/licenses/by/4.0/. Changes: [describe your changes].
+> Adapted from the FORAP documentation by FORAP contributors, [original website URL withheld for review], licensed under CC BY 4.0, https://creativecommons.org/licenses/by/4.0/. Changes: author contact information and identifying metadata omitted for review.
 
 The example illustrates attribution and does not add conditions to the Creative Commons license. No trademark rights or endorsement are granted.

@@ -1,25 +1,152 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
-<meta name="referrer" content="no-referrer">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
-<title>Illustrative Example | FORAP documentation</title>
-<link rel="icon" href="forap-icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/review.css">
-<script defer src="js/main.js"></script></head><body>
-<header class="review-header"><a href="index.html">FORAP</a><span>Documentation for anonymous review</span></header>
-<nav class="review-nav" aria-label="Documentation"><a href="index.html">Overview</a>
-<a href="purpose.html">Purpose</a>
-<a href="architecture.html">Architecture</a>
-<a href="principles.html">Guiding Principles</a>
-<a href="support.html">Support Packages</a>
-<a href="attributes.html">Project Attributes</a>
-<a href="steps.html">Applying FORAP</a>
-<a href="example.html" aria-current="page">Illustrative Example</a>
-<a href="portfolio.html">Project Portfolio</a><a href="overview-transcript.html">Overview transcript</a><a href="study-materials/questionnaire.md">Blank questionnaire</a></nav>
-<main id="main-content" class="page-content">
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Illustrative Example - FORAP</title>
+  <meta name="description"
+    content="FORAP organizes reusable and adaptable computing project-based learning projects through guiding principles, project attributes, support packages, guidance for applying the framework, examples, and a project portfolio.">
+  <meta name="keywords"
+    content="FORAP, project-based learning, PjBL, computing education, reusable projects, adaptable projects, teaching resources">
+  <meta name="author" content="FORAP">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="forap-icon.svg?v=15" type="image/svg+xml">
+  <link rel="alternate icon" href="favicon.ico" type="image/x-icon">
+  <meta name="theme-color" content="#161616">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="msapplication-navbutton-color" content="#161616">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="FORAP">
+  <meta property="og:title" content="Illustrative Example - FORAP">
+  <meta property="og:description"
+    content="FORAP organizes reusable and adaptable computing project-based learning projects through guiding principles, project attributes, support packages, guidance for applying the framework, examples, and a project portfolio.">
+  <meta property="og:image" content="assets/forap-architecture-overview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt"
+    content="FORAP architecture diagram showing guiding principles, support packages, project attributes, and project portfolio">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Illustrative Example - FORAP">
+  <meta name="twitter:description" content="FORAP organizes reusable and adaptable computing project-based learning projects through guiding principles, project attributes, support packages, guidance for applying the framework, examples, and a project portfolio.">
+  <meta name="twitter:image" content="assets/forap-architecture-overview.png">
+  <meta name="twitter:image:alt" content="FORAP architecture diagram showing guiding principles, support packages, project attributes, and project portfolio">
+
+  <!-- IBM Plex Sans Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://1.www.s81c.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet"></noscript>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.min.css?v=53">
+
+  <!-- ====================================================================
+       Carbon Design System - Web Components v2 (IBM Official CDN)
+       ==================================================================== -->
+  <script type="module"
+    src="https://1.www.s81c.com/common/carbon/web-components/tag/v2/latest/ui-shell.min.js"></script>
+  <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/tag/v2/latest/tile.min.js"></script>
+  <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/tag/v2/latest/tag.min.js"></script>
+</head>
+
+<body>
+  <!-- ====================================================================
+       SECTION 1: Header - Carbon UI Shell (g100 black theme)
+       ==================================================================== -->
+  <cds-header aria-label="FORAP Documentation">
+    <cds-header-menu-button button-label-active="Close menu" button-label-inactive="Open menu"></cds-header-menu-button>
+    <cds-header-name href="index.html">
+      <img class="site-mark site-mark--header" src="forap-icon.svg?v=15" width="22" height="22" alt=""
+        aria-hidden="true">
+      FORAP
+    </cds-header-name>
+  </cds-header>
+
+  <!-- Side Navigation - page-level (MTU level) -->
+  <cds-side-nav aria-label="Side navigation" collapse-mode="responsive">
+    <cds-side-nav-items>
+      <cds-side-nav-link href="index.html" data-page="overview" active>
+        <svg class="nav-icon" viewBox="0 0 32 32">
+          <path d="M16 2a14 14 0 1014 14A14 14 0 0016 2zm0 26a12 12 0 1112-12 12 12 0 01-12 12z" />
+          <path d="M15 8h2v11h-2zM15 21h2v3h-2z" />
+        </svg>
+        Overview
+      </cds-side-nav-link>
+      <cds-side-nav-link href="purpose.html" data-page="purpose">
+        <svg class="nav-icon" viewBox="0 0 32 32">
+          <path d="M16 4A12 12 0 114 16 12 12 0 0116 4m0-2a14 14 0 1014 14A14 14 0 0016 2z" />
+          <path d="M16 8a8 8 0 108 8 8 8 0 00-8-8zm0 14a6 6 0 116-6 6 6 0 01-6 6z" />
+          <circle cx="16" cy="16" r="3" />
+        </svg>
+        Purpose
+      </cds-side-nav-link>
+      <cds-side-nav-link href="architecture.html" data-page="architecture">
+        <svg class="nav-icon" viewBox="0 0 32 32">
+          <path d="M17 10V7h9V2h-9v3h-2V2H6v5h9v3h-5v5H4v5h14v-5h-6v-3h8v3h-6v5h14v-5h-6v-5zM8 5V4h7v1zm11 0V4h5v1zM6 18v-1h10v1zm10 0v-1h10v1z" />
+          <path d="M15 22h2v3h9v5h-9v-3h-2v3H6v-5h9zm-7 5v1h7v-1zm11 0v1h5v-1z" />
+        </svg>
+        Architecture
+      </cds-side-nav-link>
+      <div class="side-nav-divider" aria-hidden="true"></div>
+      <cds-side-nav-link href="principles.html" data-page="principles">
+        <svg class="nav-icon" viewBox="0 0 32 32">
+          <path d="M16 2a14 14 0 1014 14A14 14 0 0016 2zm0 26a12 12 0 1112-12 12 12 0 01-12 12z" />
+          <path d="M22.58 8.02l-9.9 4.24a1 1 0 00-.52.52l-4.24 9.9a1 1 0 001.31 1.31l9.9-4.24a1 1 0 00.52-.52l4.24-9.9a1 1 0 00-1.31-1.31zm-4.6 10.06l-7.19 3.08 3.08-7.19 7.19-3.08z" />
+        </svg>
+        Guiding Principles
+      </cds-side-nav-link>
+      <cds-side-nav-link href="support.html" data-page="packages">
+        <svg class="nav-icon" viewBox="0 0 32 32">
+          <path d="M28.39 10.18l-12-7a1 1 0 00-1 0l-12 7A1 1 0 003 11v14a1 1 0 00.49.86l12 7a1 1 0 001 0l12-7A1 1 0 0029 25V11a1 1 0 00-.61-.82zM16 5.2L25.9 11 16 16.8 6.1 11zm-11 7.55l10 5.83v11.82L5 24.43zm12 17.65V18.58l10-5.83v11.68z" />
+        </svg>
+        Support Packages
+      </cds-side-nav-link>
+      <cds-side-nav-link href="attributes.html" data-page="attributes">
+        <svg class="nav-icon" viewBox="0 0 32 32">
+          <path d="M4 20h2v8H4zM10 14h2v14h-2zM16 18h2v10h-2zM22 10h2v18h-2zM28 6h2v22h-2z" />
+        </svg>
+        Attributes
+      </cds-side-nav-link>
+      <div class="side-nav-divider" aria-hidden="true"></div>
+      <cds-side-nav-link href="example.html" data-page="example">
+        <svg class="nav-icon" viewBox="0 0 32 32">
+          <path d="M16 2a14 14 0 1014 14A14 14 0 0016 2zm0 26a12 12 0 1112-12 12 12 0 01-12 12z" />
+          <path d="M15 8h2v11h-2zM15 21h2v3h-2z" />
+        </svg>
+        Illustrative Example
+      </cds-side-nav-link>
+      <cds-side-nav-link href="steps.html" data-page="steps">
+        <svg class="nav-icon" viewBox="0 0 32 32">
+          <path d="M9 8a3 3 0 113-3 3 3 0 01-3 3zm0-4a1 1 0 101 1 1 1 0 00-1-1zM9 19a3 3 0 113-3 3 3 0 01-3 3zm0-4a1 1 0 101 1 1 1 0 00-1-1zM9 30a3 3 0 113-3 3 3 0 01-3 3zm0-4a1 1 0 101 1 1 1 0 00-1-1z" />
+          <path d="M15 4h13v2H15zM15 15h13v2H15zM15 26h13v2H15z" />
+        </svg>
+        Applying FORAP
+      </cds-side-nav-link>
+      <cds-side-nav-link href="portfolio.html" data-page="portfolio">
+        <svg class="nav-icon" viewBox="0 0 32 32">
+          <path
+            d="M28 10H20V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v6H4a2 2 0 00-2 2v16a2 2 0 002 2h24a2 2 0 002-2V12a2 2 0 00-2-2zM14 4h4v6h-4zM4 28V12h24v16z" />
+        </svg>
+        Project Portfolio
+      </cds-side-nav-link>
+    </cds-side-nav-items>
+  </cds-side-nav>
+
+  <!-- ====================================================================
+       Main Content Area - one page visible at a time
+       ==================================================================== -->
+  <main id="main-content" class="page-content" role="main">
+<!-- ====================================================================
+     SECTION: Illustrative Example - Touchalytics Project Package
+     Draft page kept separate until approved for navigation/integration
+     ==================================================================== -->
 <section id="example" class="page-section">
   <div class="page-hero">
     <div class="content-wrapper">
@@ -38,7 +165,7 @@
         backend.
       </p>
       <p class="example-materials-note">
-        This page describes selected Touchalytics package materials. External project files are not included in this review snapshot because their shared locations may identify the authors.
+        Selected Touchalytics package materials are available as external examples. Links open in a new tab.
       </p>
     </div>
   </div>
@@ -197,7 +324,13 @@
           development, and introductory machine learning. The overview also describes possible variations, such as
           changing the programming language, cloud provider, or biometric signal.
         </div>
-        <span class="review-unavailable">project overview (external file not included)</span>
+        <a class="tile-material-link" href="https://docs.google.com/document/d/1eCaWBqCYvy9-jNM6qEmRpsiiMmXlqdPOD8kuLVTWtn0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+          Open project overview
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M26 28H6a2 2 0 01-2-2V6a2 2 0 012-2h10v2H6v20h20V16h2v10a2 2 0 01-2 2z" />
+            <path d="M20 2v2h6.59L17 13.59 18.41 15 28 5.41V12h2V2H20z" />
+          </svg>
+        </a>
         <cds-tag type="warm-gray" size="sm" class="bottom-right-tag">INS1</cds-tag>
       </cds-tile>
 
@@ -233,7 +366,13 @@
           may need updates when Python versions, machine learning libraries, Android Studio, Android SDKs, Firebase
           settings, or setup workflows change.
         </div>
-        <span class="review-unavailable">instructor notes (external file not included)</span>
+        <a class="tile-material-link" href="https://docs.google.com/document/d/1Qy3oeZ8OsZk1SOdSUq-IASAJeEspss97QYOJSMx_onw/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+          Open instructor notes
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M26 28H6a2 2 0 01-2-2V6a2 2 0 012-2h10v2H6v20h20V16h2v10a2 2 0 01-2 2z" />
+            <path d="M20 2v2h6.59L17 13.59 18.41 15 28 5.41V12h2V2H20z" />
+          </svg>
+        </a>
         <cds-tag type="warm-gray" size="sm" class="bottom-right-tag">INS2</cds-tag>
       </cds-tile>
 
@@ -297,7 +436,13 @@
           Written and video guides help students set up Python 3 with an IDE, pip, and machine learning libraries;
           Android Studio for mobile development; and Firebase with Realtime Database configuration.
         </div>
-        <span class="review-unavailable">installation guidelines (external file not included)</span>
+        <a class="tile-material-link" href="https://drive.google.com/drive/folders/1ahNfyNbA63m9i9S7DsRrphO3CejiHvKk?usp=sharing" target="_blank" rel="noopener noreferrer">
+          Open installation guidelines
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M26 28H6a2 2 0 01-2-2V6a2 2 0 012-2h10v2H6v20h20V16h2v10a2 2 0 01-2 2z" />
+            <path d="M20 2v2h6.59L17 13.59 18.41 15 28 5.41V12h2V2H20z" />
+          </svg>
+        </a>
         <cds-tag type="purple" size="sm" class="bottom-right-tag">STU1</cds-tag>
       </cds-tile>
 
@@ -315,7 +460,13 @@
           collaboration practices such as Git/version-control use, with clear deliverables such as a Hello World Android
           app, a basic backend workflow, and verified database connectivity.
         </div>
-        <span class="review-unavailable">laboratory exercises (external file not included)</span>
+        <a class="tile-material-link" href="https://drive.google.com/drive/folders/1Id4SMH52yqCVd-McODRcHdiE4MYX04cr?usp=sharing" target="_blank" rel="noopener noreferrer">
+          Open laboratory exercises
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M26 28H6a2 2 0 01-2-2V6a2 2 0 012-2h10v2H6v20h20V16h2v10a2 2 0 01-2 2z" />
+            <path d="M20 2v2h6.59L17 13.59 18.41 15 28 5.41V12h2V2H20z" />
+          </svg>
+        </a>
         <cds-tag type="purple" size="sm" class="bottom-right-tag">STU3</cds-tag>
       </cds-tile>
 
@@ -332,7 +483,13 @@
           Reference links include videos, machine learning library documentation, Android swipe-event extraction
           resources, Android and Firebase documentation, example artifacts, and project report templates.
         </div>
-        <span class="review-unavailable">resources (external file not included)</span>
+        <a class="tile-material-link" href="https://drive.google.com/drive/folders/1lM3fMAyhHEjATk3Q9aycCFbDt_AS7Gqa?usp=sharing" target="_blank" rel="noopener noreferrer">
+          Open resources
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M26 28H6a2 2 0 01-2-2V6a2 2 0 012-2h10v2H6v20h20V16h2v10a2 2 0 01-2 2z" />
+            <path d="M20 2v2h6.59L17 13.59 18.41 15 28 5.41V12h2V2H20z" />
+          </svg>
+        </a>
         <cds-tag type="purple" size="sm" class="bottom-right-tag">STU4</cds-tag>
       </cds-tile>
     </div>
@@ -366,7 +523,13 @@
           extract and save swipe data to Firebase; Task 3, implement a Python backend for touch behavioral biometrics;
           and Task 4, integrate swipe data with the Python backend for prediction.
         </div>
-        <span class="review-unavailable">milestone overview (external file not included)</span>
+        <a class="tile-material-link" href="https://docs.google.com/document/d/1eCaWBqCYvy9-jNM6qEmRpsiiMmXlqdPOD8kuLVTWtn0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+          Open milestone overview
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M26 28H6a2 2 0 01-2-2V6a2 2 0 012-2h10v2H6v20h20V16h2v10a2 2 0 01-2 2z" />
+            <path d="M20 2v2h6.59L17 13.59 18.41 15 28 5.41V12h2V2H20z" />
+          </svg>
+        </a>
         <cds-tag type="cool-gray" size="sm" class="bottom-right-tag">ASM1</cds-tag>
       </cds-tile>
 
@@ -385,7 +548,13 @@
           transfer concepts from the team project. The package also includes a structured instructor prompt for
           generating additional design problems with an LLM.
         </div>
-        <span class="review-unavailable">design problems (external file not included)</span>
+        <a class="tile-material-link" href="https://docs.google.com/spreadsheets/d/1XUnIEBnUcaPUh-k3mDkn1IgQK4-dUeX4nrPrjJ-AKIk/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+          Open design problems
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M26 28H6a2 2 0 01-2-2V6a2 2 0 012-2h10v2H6v20h20V16h2v10a2 2 0 01-2 2z" />
+            <path d="M20 2v2h6.59L17 13.59 18.41 15 28 5.41V12h2V2H20z" />
+          </svg>
+        </a>
         <cds-tag type="cool-gray" size="sm" class="bottom-right-tag">ASM2</cds-tag>
       </cds-tile>
 
@@ -404,7 +573,13 @@
           demonstration quality. It also supports evaluation of participation, responsibility, and contribution during
           teamwork.
         </div>
-        <span class="review-unavailable">detailed rubric (external file not included)</span>
+        <a class="tile-material-link" href="https://docs.google.com/document/d/1ocP51LnNt-S1AM1xKGmpPeHTY9T8cJA6dueLMEG3AXk/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+          Open detailed rubric
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M26 28H6a2 2 0 01-2-2V6a2 2 0 012-2h10v2H6v20h20V16h2v10a2 2 0 01-2 2z" />
+            <path d="M20 2v2h6.59L17 13.59 18.41 15 28 5.41V12h2V2H20z" />
+          </svg>
+        </a>
         <cds-tag type="cool-gray" size="sm" class="bottom-right-tag">ASM3</cds-tag>
       </cds-tile>
     </div>
@@ -581,5 +756,53 @@
   </div>
 </section>
   </main>
-<footer class="review-footer">FORAP documentation. Offline review snapshot.</footer>
-</body></html>
+
+  <footer class="site-footer" aria-label="Footer">
+    <div class="content-wrapper site-footer__inner">
+      <div class="site-footer__brand">
+        <p class="site-footer__eyebrow">FORAP</p>
+        <p class="site-footer__description">
+          Framework for Organizing Reusable and Adaptable PjBL Projects.
+        </p>
+      </div>
+
+      <nav class="site-footer__group site-footer__group--explore" aria-labelledby="footer-explore-title">
+        <h2 class="site-footer__title" id="footer-explore-title">Explore Framework</h2>
+        <div class="site-footer__columns">
+          <ul class="site-footer__list">
+            <li><a class="site-footer__link" href="index.html">Overview</a></li>
+            <li><a class="site-footer__link" href="purpose.html">Purpose</a></li>
+            <li><a class="site-footer__link" href="architecture.html">Architecture</a></li>
+            <li><a class="site-footer__link" href="principles.html">Guiding Principles</a></li>
+            <li><a class="site-footer__link" href="support.html">Support Packages</a></li>
+          </ul>
+          <ul class="site-footer__list">
+            <li><a class="site-footer__link" href="attributes.html">Attributes</a></li>
+            <li><a class="site-footer__link" href="example.html">Illustrative Example</a></li>
+            <li><a class="site-footer__link" href="steps.html">Applying FORAP</a></li>
+            <li><a class="site-footer__link" href="portfolio.html">Project Portfolio</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="site-footer__group" aria-labelledby="footer-contact-title">
+        <h2 class="site-footer__title" id="footer-contact-title">Contact Us</h2>
+        <ul class="site-footer__list site-footer__list--muted">
+          <li>Contact details withheld for anonymous review.</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="site-footer__meta">
+      <div class="content-wrapper site-footer__meta-inner">
+        <p>Last updated: June 2026</p>
+        <p>Copyright &copy; 2026 FORAP</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js?v=28"></script>
+</body>
+
+</html>

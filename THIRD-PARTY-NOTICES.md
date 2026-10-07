@@ -24,4 +24,4 @@ Project packages and documents linked from the website are separate resources. T
 
 ## Hosted services
 
-Analytics are omitted from this review copy. Externally loaded interface components and fonts from the original site are also omitted. The upstream license notices are retained for attribution.
+Analytics are omitted from the review copy.
