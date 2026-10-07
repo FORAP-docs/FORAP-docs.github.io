@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">FORAP icon</title>
+  <desc id="desc">A simple reusable project package icon.</desc>
+  <rect width="256" height="256" rx="48" fill="#161616"/>
+  <path d="M128 45l78 45v76l-78 45-78-45V90z" fill="#ffffff"/>
+  <path d="M128 45l78 45-78 45-78-45z" fill="#d0e2ff"/>
+  <path d="M50 90l78 45v76l-78-45z" fill="#a6c8ff"/>
+  <path d="M206 90l-78 45v76l78-45z" fill="#78a9ff"/>
+  <path d="M128 45l78 45v76l-78 45-78-45V90z" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M50 90l78 45 78-45M128 135v76" fill="none" stroke="#161616" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
